@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LineDrawingTest",
+            "request": "launch",
+            "mainClass": "LineDrawing.LineDrawingTest"
+        }
+    ]
+}
