@@ -8,15 +8,21 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class LineDrawingTest {
+    
+    //set components
+        static JFrame application = new JFrame();
+        static JButton button = new JButton("draw");
+        static LiningPanel panel = new LiningPanel();
+        static BoxLayout box = new BoxLayout(application.getContentPane(), BoxLayout.PAGE_AXIS); //set up layout
 
     public static void main(String[] args) {
 
-        //set components
-        JFrame application = new JFrame();
-        JButton button = new JButton("draw");
-        LiningPanel panel = new LiningPanel();
-        BoxLayout box = new BoxLayout(application.getContentPane(), BoxLayout.PAGE_AXIS); //set up layout
+        setUpComponents();
+        addButtonEvent();
+      
+    }
 
+    public static void setUpComponents(){
         //configuration of Jfram
         application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         application.getContentPane().setLayout(box);
@@ -28,7 +34,9 @@ public class LineDrawingTest {
         application.setSize(300, 320);
         application.setTitle("Lining Art");
         application.setVisible(true);
-        
+    }
+
+    public static void addButtonEvent(){
         //button listerner for three funtions: draw, stop, resume
         button.addActionListener((ActionEvent e) -> {
             //click draw, button text changes to stop, and add panel, start run
