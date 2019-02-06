@@ -79,7 +79,10 @@ public class LiningPanel extends javax.swing.JPanel {
                     ex.printStackTrace();
                 }
                 //repaint the component of this panel
-                repaint();
+                if(!pause){
+                    repaint();
+                }
+                
             }
         });
         p.start(); // start thread p
