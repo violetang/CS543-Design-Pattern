@@ -1,6 +1,7 @@
+package company;
 import java.util.ArrayList;
 
-class Project {
+public class Project {
 
     private int projectId;
     private String projectName;
@@ -12,7 +13,6 @@ class Project {
         projectName = n;
         projectStatus = 0;
         tasks = new ArrayList<>();
-
     }
 
     public int getProjectId(){ return projectId; };
