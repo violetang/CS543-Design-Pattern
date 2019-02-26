@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72585a05-d8b0-4815-b766-b5b5b2f4d7e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AdvancedModeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BeginModeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CharacterAdvanced.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CharacterBeginner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CharacterIF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CharacterIntermediate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FactoryMaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IntermediateModeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ModeIF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeaponAdvanced.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeaponBeginner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeaponIF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeaponIntermediate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CharacterIF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CharacterIF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WeaponAdvanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WeaponAdvanced.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WeaponBeginner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WeaponBeginner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WeaponIF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WeaponIF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WeaponIntermediate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WeaponIntermediate.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,46 +28,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CharacterAdvanced.java">
+        <entry file="file://$PROJECT_DIR$/src/WeaponIF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="43" selection-start-column="43" selection-end-column="43" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CharacterBeginner.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WeaponAdvanced.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="43" selection-start-column="43" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CharacterIF.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28" selection-start-column="17" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CharacterIntermediate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IntermediateModeFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="54" selection-start-column="54" selection-end-column="54" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -83,35 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WeaponBeginner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="13" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeaponIF.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="17" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/WeaponIntermediate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeaponAdvanced.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="13" selection-end-column="27" />
+            <state relative-caret-position="225">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -151,12 +89,17 @@
         <option value="$PROJECT_DIR$/src/AdvancedModeFactory.java" />
         <option value="$PROJECT_DIR$/src/BeginModeFactory.java" />
         <option value="$PROJECT_DIR$/src/IntermediateModeFactory.java" />
+        <option value="$PROJECT_DIR$/src/CharacterIF.java" />
+        <option value="$PROJECT_DIR$/src/WeaponIF.java" />
+        <option value="$PROJECT_DIR$/src/WeaponBeginner.java" />
+        <option value="$PROJECT_DIR$/src/WeaponIntermediate.java" />
+        <option value="$PROJECT_DIR$/src/WeaponAdvanced.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="38" />
+    <option name="x" value="123" />
+    <option name="y" value="143" />
     <option name="width" value="1400" />
     <option name="height" value="837" />
   </component>
@@ -189,7 +132,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551140657133" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551159143097" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -225,15 +168,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551137973440</updated>
-      <workItem from="1551137978373" duration="2202000" />
+      <workItem from="1551137978373" duration="3769000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;first initial&quot;">
+      <created>1551140663404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551140663404</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;first initial&quot;">
+      <created>1551140673244</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551140673244</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2202000" />
+    <option name="totallyTimeSpent" value="3769000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="38" width="1400" height="837" extended-state="0" />
+    <frame x="123" y="143" width="1400" height="837" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -242,10 +200,11 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.32885906" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -266,6 +225,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;first initial&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;first initial&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -303,38 +266,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BeginModeFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CharacterAdvanced.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="43" selection-start-column="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CharacterBeginner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" selection-start-column="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CharacterIF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CharacterIntermediate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -345,31 +280,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeaponAdvanced.java">
+    <entry file="file://$PROJECT_DIR$/src/CharacterIntermediate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="27" selection-start-column="13" selection-end-column="27" />
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeaponBeginner.java">
+    <entry file="file://$PROJECT_DIR$/src/CharacterIF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="13" selection-end-column="27" />
+        <state relative-caret-position="15">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeaponIF.java">
+    <entry file="file://$PROJECT_DIR$/src/CharacterBeginner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="25" selection-start-column="17" selection-end-column="25" />
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BeginModeFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WeaponIntermediate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="120">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeaponIF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeaponBeginner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeaponAdvanced.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
