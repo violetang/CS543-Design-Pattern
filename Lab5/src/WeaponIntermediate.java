@@ -1,16 +1,13 @@
-public class WeaponIntermediate implements WeaponIF {
-    private String name;
-    private int grade;
-    private String decription;
+public class WeaponIntermediate extends WeaponAbstract implements WeaponIF {
+    private final int grade = 3;
 
-    WeaponIntermediate(String n, int g){
-        name = n;
-        grade = g;
+    WeaponIntermediate(String n) {
+        super(n);
     }
 
     @Override
     public String getDescription(){
-        decription = "Name: " + name + "Grade: "+ grade + "\n";
+        decription = "Intermediate Weapon, Name: " + getName() + "Grade: "+ grade + "\n";
         return decription;
     }
 }

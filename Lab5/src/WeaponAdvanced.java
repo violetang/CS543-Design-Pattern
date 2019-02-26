@@ -1,16 +1,13 @@
-public class WeaponAdvanced implements WeaponIF {
-    private String name;
-    private int grade;
-    private String decription;
+public class WeaponAdvanced extends WeaponAbstract implements WeaponIF {
+    private final int grade = 3;
 
-    WeaponAdvanced(String n, int g){
-        name = n;
-        grade = g;
+    WeaponAdvanced(String n) {
+        super(n);
     }
 
     @Override
     public String getDescription(){
-        decription = "Name: " + name + "Grade: "+ grade + "\n";
+        decription = "Advanced Weapon, Name: " + getName() + "Grade: "+ grade + "\n";
         return decription;
     }
 }
