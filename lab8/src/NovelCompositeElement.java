@@ -1,2 +1,3 @@
-public class NovelCompositeElement {
+public class NovelCompositeElement implements NovelElementIF{
+    //super class
 }
