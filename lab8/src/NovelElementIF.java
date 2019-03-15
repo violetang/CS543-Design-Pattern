@@ -1,7 +1,4 @@
 public interface NovelElementIF {
-    /*
-    public void get();
-    public void set();
-    public void remove();
-    */
+    public NovelCompositeElement getParent();
+    public int getCharLength();
 }
