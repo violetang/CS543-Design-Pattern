@@ -1,2 +1,2 @@
-public class Character implements NovelElementIF {
+public class Character extends AbtractNovelElement {
 }

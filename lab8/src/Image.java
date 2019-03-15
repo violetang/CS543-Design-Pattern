@@ -1,2 +1,2 @@
-public class Image implements NovelElementIF {
+public class Image extends AbtractNovelElement {
 }
