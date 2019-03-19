@@ -43,5 +43,10 @@ public class Main {
         int len = book_one.getCharLength();
         System.out.println("book_one has char : " + len);
 
+        int count = book_one.getElementCount();
+        System.out.println("book_one totally has " + count + " elements");
+
+        book_one.displayChildren();
+
     }
 }

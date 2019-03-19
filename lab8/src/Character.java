@@ -23,6 +23,8 @@ public class Character extends AbtractNovelElement {
         return string.length();
     }
 
-    public void displayChildren(){ }
+    public int getElementCount(){ return 0; }
+
+    public void displayChildren(){}
 
 }

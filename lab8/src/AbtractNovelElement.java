@@ -23,4 +23,7 @@ abstract class AbtractNovelElement implements NovelElementIF {
     @Override
     public abstract void displayChildren();
 
+    @Override
+    public abstract int getElementCount();
+
 }

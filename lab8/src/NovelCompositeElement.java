@@ -52,11 +52,23 @@ public abstract class NovelCompositeElement extends AbtractNovelElement{
     }
 
     public void displayChildren(){
+        //System.out.println("    including : ");
         for(int i = 0 ; i < children.size(); i++){
             AbtractNovelElement thisChild;
             thisChild = (AbtractNovelElement)children.get(i);
+            System.out.println("    " +thisChild.getType()+ ": "+thisChild.getName());
             thisChild.displayChildren();
         }
+    }
+
+    public int getElementCount(){
+        int count = children.size();
+        for(int i = 0 ; i < children.size(); i++){
+            AbtractNovelElement thisChild;
+            thisChild = (AbtractNovelElement) children.get(i);
+            count += thisChild.getElementCount();
+        }
+        return count;
     }
 
 }

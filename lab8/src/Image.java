@@ -18,5 +18,7 @@ public class Image extends AbtractNovelElement {
         return 1;
     }
 
+    public int getElementCount(){ return 0; }
+
     public void displayChildren(){ }
 }
