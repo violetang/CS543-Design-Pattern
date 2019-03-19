@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Create the Novel;
-        NovelElementIF book_one = new Novel();
+        NovelElementIF book_one = new Novel("How to learn Java");
         String input = "Design an archive system to store novels." +
                 " A novel can have many pages. Within a page, there can be several columns and frames. " +
                 "A column can contain frames, so can a frame contain columns. " +
@@ -16,8 +16,8 @@ public class Main {
                 "Please re-design it into a hierarchical representation to improve quality.";
 
         //create all the elements for book_one
-        NovelElementIF page_one = new Page();
-        NovelElementIF page_two = new Page();
+        NovelElementIF page_one = new Page("page_1");
+        NovelElementIF page_two = new Page("page_2");
         NovelElementIF column_left_one = new Column("left_column");
         NovelElementIF column_right_one = new Column("right_column");
         NovelElementIF text = new LineOfText("LineOfText_1");
