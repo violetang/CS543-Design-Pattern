@@ -5,6 +5,7 @@ public abstract class NovelCompositeElement extends AbtractNovelElement{
     private ArrayList<NovelElementIF> children = new ArrayList();
     private int cachedCharLength = -1;
 
+
     public NovelElementIF getChild(int index){
         return (NovelElementIF)children.get(index);
     }
@@ -48,6 +49,14 @@ public abstract class NovelCompositeElement extends AbtractNovelElement{
             len += thisChild.getCharLength();
         }
         return len;
+    }
+
+    public void displayChildren(){
+        for(int i = 0 ; i < children.size(); i++){
+            AbtractNovelElement thisChild;
+            thisChild = (AbtractNovelElement)children.get(i);
+            thisChild.displayChildren();
+        }
     }
 
 }

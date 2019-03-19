@@ -18,10 +18,10 @@ public class Main {
         //create all the elements for book_one
         NovelElementIF page_one = new Page();
         NovelElementIF page_two = new Page();
-        NovelElementIF column_left_one = new Column();
-        NovelElementIF column_right_one = new Column();
-        NovelElementIF text = new LineOfText();
-        NovelElementIF chara = new Character(input);
+        NovelElementIF column_left_one = new Column("left_column");
+        NovelElementIF column_right_one = new Column("right_column");
+        NovelElementIF text = new LineOfText("LineOfText_1");
+        NovelElementIF chara = new Character("lab8",input);
 
         //text has charaters
         ((LineOfText) text).addChild(chara);

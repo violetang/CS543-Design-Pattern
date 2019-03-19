@@ -1,6 +1,7 @@
 abstract class AbtractNovelElement implements NovelElementIF {
 
     private NovelCompositeElement parent;
+    private String name;
 
     @Override
     public NovelCompositeElement getParent() {
@@ -12,6 +13,14 @@ abstract class AbtractNovelElement implements NovelElementIF {
     }
 
     @Override
+    public abstract String getName();
+
+    public abstract String getType();
+
+    @Override
     public abstract int getCharLength();
+
+    @Override
+    public abstract void displayChildren();
 
 }
