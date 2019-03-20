@@ -20,5 +20,5 @@ public class Image extends AbtractNovelElement {
 
     public int getElementCount(){ return 0; }
 
-    public void displayChildren(){ }
+    public void displayChildren(String x){}
 }

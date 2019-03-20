@@ -1,8 +1,11 @@
+/**
+ * Character.java
+ */
 public class Character extends AbtractNovelElement {
 
     private String string;
     private String name;
-    private String type = "Image";
+    private String type = "Character";
 
     public Character(String name,String s){
         this.name = name;
@@ -25,6 +28,6 @@ public class Character extends AbtractNovelElement {
 
     public int getElementCount(){ return 0; }
 
-    public void displayChildren(){}
+    public void displayChildren(String x){ }
 
 }

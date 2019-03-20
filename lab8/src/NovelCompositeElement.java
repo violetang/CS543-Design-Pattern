@@ -51,13 +51,16 @@ public abstract class NovelCompositeElement extends AbtractNovelElement{
         return len;
     }
 
-    public void displayChildren(){
-        //System.out.println("    including : ");
+    public void displayChildren(String space){
+        StringBuilder ans = new StringBuilder("    ");
+        ans.append(space);
+
         for(int i = 0 ; i < children.size(); i++){
             AbtractNovelElement thisChild;
             thisChild = (AbtractNovelElement)children.get(i);
-            System.out.println("    " +thisChild.getType()+ ": "+thisChild.getName());
-            thisChild.displayChildren();
+            System.out.println(ans + "--"+thisChild.getType()+ "(" + thisChild.getName()+ ")");
+            String x = ans.toString();
+            thisChild.displayChildren(x);
         }
     }
 
