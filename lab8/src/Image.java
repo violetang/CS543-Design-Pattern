@@ -1,3 +1,6 @@
+/**
+ * Image.java
+ */
 public class Image extends AbtractNovelElement {
     private String name;
     private String type = "Image";

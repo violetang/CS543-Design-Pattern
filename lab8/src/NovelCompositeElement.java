@@ -1,3 +1,7 @@
+/**
+ * NovelCompositeElement.java
+ */
+
 import java.util.ArrayList;
 
 public abstract class NovelCompositeElement extends AbtractNovelElement{
