@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1a27dad-3190-41c6-96de-64e880fcfb69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AbstractCoffee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cappuccino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chocolate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoffeeIF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoffeeProcessorEnvironment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoffeeProcessorEnvironmentIF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CondimentIF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Espresso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Latte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mocha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Regular.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Vanilla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/src/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/src/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/src/NovelCompositeElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/src/NovelCompositeElement.java" afterDir="false" />
-    </list>
+    <list default="true" id="c1a27dad-3190-41c6-96de-64e880fcfb69" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +120,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553628154228" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553628228758" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -178,16 +161,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553615264979</updated>
-      <workItem from="1553615268937" duration="11790000" />
+      <workItem from="1553615268937" duration="12296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11790000" />
+    <option name="totallyTimeSpent" value="12296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="23" width="1400" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
