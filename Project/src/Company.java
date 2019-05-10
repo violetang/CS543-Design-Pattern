@@ -6,6 +6,7 @@ public class Company {
     private CEO ceo;
     private CFO cfo;
     private CTO cto;
+    private double stockPrice;
     private ArrayList<People> staffs;
     
     public Company(String name, String address){
