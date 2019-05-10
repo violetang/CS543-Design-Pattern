@@ -1,33 +1,71 @@
+import java.util.ArrayList;
 
-/**
- *
- * @author jayxu
- */
 public class Packet {
-    private int baseSalary;
-    private int position;
-    private int bonus;
+    private double baseSalary;
+    private int position; // 1 = assistant ; 2 = regular; 3 = senior; 4 = staff
+    private double bonus; // percentage: 10%, 15%, 20% ..., increase by 5 %;
     private int stock;
-    private People p;
+    private ArrayList<TaskIF> caseInvolved;
     
-    public Packet(People p, int baseSalary, int position, int bonus, int stock){
-        this.p = p;
+    public Packet(int baseSalary, int position, int bonus, int stock){
         this.baseSalary = baseSalary;
         this.position = position;
         this.bonus = bonus;
         this.stock = stock;
+        caseInvolved = new ArrayList<TaskIF>();
     }
-    
-    public int getSalary(){
+
+    // About salary
+    public double getBaseSalary(){
         return this.baseSalary;
     }
-    public void setSalary(int salary){
-        this.baseSalary = salary;
+
+    //todo: decrease salary
+    public void updateSalary(double percentage){
+        this.baseSalary = baseSalary * (1 + percentage);
     }
-    public void setPosition(int position){
+
+
+    // Aabout Position
+    public void updatePosition(int position){
         this.position = position;
     }
     public int getPosition(){
         return this.position;
     }
+
+
+    // About bonus;
+    public double getBonus(){ return this.bonus; }
+
+    public void increaseBonus() {
+        bonus = bonus + 0.05;
+    }
+
+    // About stock;
+    public int getStock(){return this.stock;}
+
+    public void updateStock(int number){
+        this.stock = this.stock + number;
+    }
+
+    //About cases;
+    public int returnNumnberOfCase(){
+        return caseInvolved.size();
+    }
+
+    public void addCase(TaskIF c){
+        caseInvolved.add(c);
+    }
+
+    public void printCase(){
+        int i = 0 ;
+        for(TaskIF c : caseInvolved){
+            Case temp = (Case)c;
+            System.out.println(i + "---" + temp.returnClient()+ "\n");
+            i++;
+        }
+    }
+
+
 }
