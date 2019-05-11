@@ -1,27 +1,40 @@
 
 
-public abstract class Employee extends People {
+public abstract class Employee implements EmployeeIF, EditPacketIF {
 
-    private Employee e;
-    private Leader l;
-    private double salary;
+    private int id;
+    private String name;
+    private int year;
+    private String sexual;
+    private Department dept;
+    private EditPacket privatePacket;
+    private EditPacketProtectionProxy editPacket;
     private static boolean permission;
 
-    public Employee(String name, int ID) {
-        super(name, ID);
+
+    //private static boolean permission;
+
+    public Employee(int i, String n, int y, String sex, Department d, Packet p, boolean permi) {
+        id = i;
+        name = n;
+        year = y;
+        sexual = sex;
+        dept = d;
+        privatePacket = new EditPacket(p);
+        editPacket = new EditPacketProtectionProxy(privatePacket);
+        permission = permi;
+
     }
 
-    public void setPermission(boolean permission) {
-        this.permission = permission;
-    }
 
-    public static boolean hasPermission() {
+    public static boolean hasPermission(){
         return permission;
     }
 
-    public void editPacket(EditPacketIF edit) {
+    public int getID(){ return id; }
+    public String getName(){ return name; }
+    public String getSexual(){ return sexual;}
+    public String getDept(){ return dept.returnDepartmentName();}
+    public int getYear(){ return year;}
 
-    }
-
-    public abstract boolean decision(int budget, String choice);
 }

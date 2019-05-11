@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-public class Leader extends People {
+public class Leader extends Employee {
 
     private ArrayList<Manager> managers;
 

@@ -2,6 +2,10 @@
 public class EditPacketProtectionProxy implements EditPacketIF{
     private EditPacket e;
 
+    public EditPacketProtectionProxy(EditPacket x){
+        e = x;
+    }
+
     @Override
     public void editBase(double salary, int position, int stock){
         if(Employee.hasPermission()){
