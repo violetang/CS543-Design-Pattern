@@ -1,8 +1,4 @@
 
-/**
- *
- * @author jayxu
- */
 public class EditPacketProtectionProxy implements EditPacketIF{
     private EditPacket e;
 
