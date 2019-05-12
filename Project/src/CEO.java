@@ -10,7 +10,12 @@ public class CEO extends Leader {
         super(i, n, y, sex, d, p, permi);
     }
 
-    public void workOn(){
+    public void offerDecision(Client c){
+
+        //get what's the plan
+        //toto: plan type
+        int plan = c.getPlan();
+        int profit = cost - budget;
 
     }
 }

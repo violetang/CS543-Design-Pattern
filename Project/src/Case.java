@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class Case implements TaskIF {
     //businessCase
-    public int id;
-    public String client;
+    public String caseName;
+    public Client client;
     private State currentState;
     private int budeget;
     private int cost;
@@ -11,7 +11,7 @@ public class Case implements TaskIF {
     public ArrayList<Employee> team;
 
     public String returnClient(){
-        return client;
+        return client.name;
     }
 
 }

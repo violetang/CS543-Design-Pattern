@@ -5,8 +5,8 @@ public class Company {
     private String address;
     private double stockPrice;
     private CaseDatabase caseDatabases;
-    private ArrayList<People> staffs;
-    
+    private ArrayList<EmployeeIF> staffs;
+
     public Company(String name, String address){
         this.name = name;
         this.address = address;
@@ -17,5 +17,34 @@ public class Company {
     public String getName(){
         return this.name;
     }
+
+
+    /*
+    Here is using Abstract Factory
+    In the future, the company may add more business and more service
+    then can add more service here.
+
+    eg.
+    public enum ServiceType {
+      App, video ...
+    }
+
+    how to use in main:
+    Company techCom = new Company();
+    planIF a = techCom.createService(char plan);
+
+     */
+    public static class BusinessMaker{
+
+        public static ServiceFatory createService(){
+            //if there more service type,then use switch to create different object, by the input type.
+            return new AppDevelopment();
+        }
+    }
+
+    public PlanIF createService(char c){
+       return BusinessMaker.createService().createPlan(c);
+    }
+
 
 }

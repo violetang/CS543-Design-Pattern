@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class CaseForDatabase {
     private int id;
     private String CaseName;
-    private String ClientName;
+    private Client client;
     private int year;
     private int cost;
     private int profit;
