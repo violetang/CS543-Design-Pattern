@@ -5,8 +5,8 @@ public class Case implements TaskIF {
     public String caseName;
     public Client client;
     private State currentState;
+    private PlanIF plan;
     private int budeget;
-    private int cost;
     private int grade;
     public ArrayList<Employee> team;
 

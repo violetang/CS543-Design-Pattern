@@ -26,7 +26,7 @@ public class Manager extends Employee {
         return this.team;
     }
 
-
+    public Leader getSupervisor(){ return supervisor;}
     public void setSupervisor(Leader l) {
         this.supervisor = l;
         this.supervisor.addManager(this);

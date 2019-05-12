@@ -5,11 +5,10 @@ public class Client {
 
     public String name;
     private int budget;
-    private int plan;
+    private char plan;
 
     //Scanner reader = new Scanner(System.in);
-    //todo: int plan ==> Plan plan
-    public Client(String n, int b, int choice) {
+    public Client(String n, int b, char choice) {
         name = n;
         budget = b;
         plan = choice;
@@ -22,8 +21,8 @@ public class Client {
     }
 
     public int getBudget(){ return budget;}
-    public int getPlan(){ return plan;}
-    public int changeBudeget(int newB){ budget = newB; }
+    public char getPlan(){ return plan;}
+    public int changeBudeget(int newB){ return budget = newB; }
 
 
     /*

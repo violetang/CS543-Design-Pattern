@@ -18,7 +18,6 @@ public class Company {
         return this.name;
     }
 
-
     /*
     Here is using Abstract Factory
     In the future, the company may add more business and more service
@@ -31,8 +30,9 @@ public class Company {
 
     how to use in main:
     Company techCom = new Company();
-    planIF a = techCom.createService(char plan);
-
+    planIF a = techCom.createService('A');
+    planIF b = techCom.createService('B');
+    planIF c = techCom.createService('C');
      */
     public static class BusinessMaker{
 
