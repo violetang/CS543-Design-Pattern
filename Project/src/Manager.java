@@ -33,7 +33,7 @@ public class Manager extends Employee {
 
     //todo
     public void delegation(Manager m) {
-        this.colleague = m;
+        this.colleague = colleague;
     }
 
 
