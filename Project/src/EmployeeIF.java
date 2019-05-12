@@ -5,6 +5,4 @@ public interface EmployeeIF {
     public String getSexual();
     public String getDept();
     public int getYear();
-
-    public void work();
 }

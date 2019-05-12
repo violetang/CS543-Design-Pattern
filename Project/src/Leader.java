@@ -4,10 +4,22 @@ import java.util.ArrayList;
 
 public class Leader extends Employee {
 
+
     private ArrayList<Manager> managers;
 
-    public Leader(String name, int ID) {
-        super(name, ID);
+    //construtor
+    public Leader(int i, String n, int y, String sex, Department d, Packet p, boolean permi) {
+        super(i, n, y, sex, d, p, permi);
+    }
+
+    @Override
+    public void editBase(double salary, int position, int stock) {
+
+    }
+
+    @Override
+    public void editCaseInvolve(TaskIF c) {
+
     }
 
     public void addManager(Manager m) {
@@ -22,6 +34,7 @@ public class Leader extends Employee {
         return this.managers;
     }
 
+    /*
     public boolean decision(int budget, String choice) {
         int cost = 0;
         int charge = 0;
@@ -47,6 +60,6 @@ public class Leader extends Employee {
              System.out.println("Sorry, your budget is not enough, we cannot accpet this offer");
             return false;
         }
-    }
+    }*/
 
 }

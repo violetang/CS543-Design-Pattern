@@ -1,29 +1,26 @@
 
 
-public abstract class Employee implements EmployeeIF, EditPacketIF {
+public abstract class Employee implements EmployeeIF{
 
     private int id;
     private String name;
     private int year;
     private String sexual;
     private Department dept;
-    private EditPacket privatePacket;
-    private EditPacketProtectionProxy editPacket;
+    private EditPacketIF editPacket;
     private static boolean permission;
 
 
     //private static boolean permission;
 
-    public Employee(int i, String n, int y, String sex, Department d, Packet p, boolean permi) {
+    public Employee(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
         id = i;
         name = n;
         year = y;
         sexual = sex;
         dept = d;
-        privatePacket = new EditPacket(p);
-        editPacket = new EditPacketProtectionProxy(privatePacket);
+        editPacket = new EditPacketProtectionProxy((EditPacket) p);
         permission = permi;
-
     }
 
 
@@ -36,5 +33,25 @@ public abstract class Employee implements EmployeeIF, EditPacketIF {
     public String getSexual(){ return sexual;}
     public String getDept(){ return dept.returnDepartmentName();}
     public int getYear(){ return year;}
+
+    public double getSalary(){
+        return editPacket.getSalary();
+    }
+
+    public double getBonus(){
+        return editPacket.getbonus();
+    }
+
+    public int getStock(){
+        return editPacket.getStock();
+    }
+
+    public int getPosition(){
+        return editPacket.getPosition();
+    }
+
+    public void getCase(){
+        editPacket.getCase();
+    }
 
 }

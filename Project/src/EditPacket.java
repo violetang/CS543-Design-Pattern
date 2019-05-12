@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class EditPacket implements EditPacketIF{
     Packet packet;
@@ -20,5 +21,30 @@ public class EditPacket implements EditPacketIF{
     @Override
     public void editCaseInvolve(TaskIF c) {
         packet.addCase(c);
+    }
+
+    @Override
+    public double getbonus() {
+        return packet.getBonus();
+    }
+
+    @Override
+    public double getSalary() {
+        return packet.getBaseSalary();
+    }
+
+    @Override
+    public int getPosition() {
+        return packet.getPosition();
+    }
+
+    @Override
+    public int getStock() {
+        return packet.getStock();
+    }
+
+    @Override
+    public void getCase() {
+        packet.printCase();
     }
 }

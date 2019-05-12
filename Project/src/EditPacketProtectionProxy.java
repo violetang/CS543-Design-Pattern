@@ -23,4 +23,29 @@ public class EditPacketProtectionProxy implements EditPacketIF{
             System.out.println("No permission");
         }
     }
+
+    @Override
+    public double getbonus() {
+        return e.getbonus();
+    }
+
+    @Override
+    public double getSalary() {
+        return e.getSalary();
+    }
+
+    @Override
+    public int getStock() {
+        return e.getStock();
+    }
+
+    @Override
+    public int getPosition() {
+        return e.getPosition();
+    }
+
+    @Override
+    public void getCase() {
+        e.getCase();
+    }
 }
