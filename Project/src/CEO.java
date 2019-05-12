@@ -6,14 +6,11 @@ import java.util.ArrayList;
  */
 public class CEO extends Leader {
 
-    private ArrayList<Manager> managers;
-
-    public CEO(String name, int ID) {
-        super(name, ID);
+    public CEO(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
+        super(i, n, y, sex, d, p, permi);
     }
 
-    @Override
-    public void judge(){
-        
+    public void workOn(){
+
     }
 }
