@@ -1,10 +1,16 @@
 public class planA implements PlanIF {
+    String name = "Plan A";
     int cost = 300000;
     int price = 1000000;
     String[] context = {"Development", "Testing", "Deployment"};
 
     public planA(){
 
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     @Override

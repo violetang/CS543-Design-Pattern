@@ -1,10 +1,16 @@
 public class planC implements PlanIF {
-    int cost = 30000;
-    int price = 500000;
+    String name = "Plan C";
+    int cost = 800000;
+    int price = 2000000;
     String[] context = {"Consulting", "System Design","Development", "Testing", "Deployment", "Maintenance"};
 
     public planC(){
 
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     public void consulting(){

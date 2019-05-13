@@ -131,6 +131,29 @@ public class Main {
         //todo: could use a while loop, for user iteraction
 
         //1. Print out plan Menu:
+        System.out.println("Welcome to " + techCom.getName());
+        System.out.println("Our company provides following Software development plans: ");
+        System.out.println("********************************");
+        System.out.println(c.getName()+ "   Price:  $" + c.getPrice()+ " \nincluding:");
+        String[] temp = c.getContext();
+        for(int i = 0 ; i < temp.length; i++){
+            System.out.println(i+ " - "+temp[i]);
+        }
+        System.out.println("********************************");
+        System.out.println(b.getName()+ "   Price:  $" + b.getPrice()+ " \nincluding:");
+        temp = b.getContext();
+        for(int i = 0 ; i < temp.length; i++){
+            System.out.println(i+ " - "+temp[i]);
+        }
+        System.out.println("********************************");
+        System.out.println(a.getName()+ "   Price:  $" + a.getPrice()+ " \nincluding:");
+        temp = a.getContext();
+        for(int i = 0 ; i < temp.length; i++){
+            System.out.println(i+ " - "+temp[i]);
+        }
+        System.out.println("********************************");
+        System.out.println("Additional function: $ 10 k per each");
+        System.out.println("********************************");
 
 
         //2. assume client choose Plan A, Budget 80k;

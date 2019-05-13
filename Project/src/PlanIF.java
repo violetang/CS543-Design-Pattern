@@ -1,5 +1,6 @@
 public interface PlanIF {
 
+    public String getName();
     public int getCost();
     public int getPrice();
     public String[] getContext();

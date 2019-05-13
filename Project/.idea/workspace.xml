@@ -3,36 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1fac0a11-f835-4edc-b61e-3309ddece17a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/CEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/CEO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/CFO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/CFO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/CTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/CTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Case.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Case.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Development.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/EditPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/EditPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/EditPacketIF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/EditPacketIF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/EditPacketProtectionProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/EditPacketProtectionProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/HR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Leader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Leader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Marketing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Packet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Packet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/People.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Plan_server_IF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Response_IF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Worker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditPacketProtectionProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditPacketProtectionProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EmployeeIF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeIF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlanIF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlanIF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/planA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/planA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/planB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/planB.java" afterDir="false" />
@@ -47,13 +20,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1225">
-              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+            <state relative-caret-position="2115">
+              <caret line="141" column="63" lean-forward="true" selection-start-line="141" selection-start-column="63" selection-end-line="141" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Company.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="44" />
+              <folding>
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,20 +71,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TaskIF.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/planA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            <state relative-caret-position="165">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="20" />
               <folding>
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
                 <element signature="e#225#226#0" expanded="true" />
                 <element signature="e#279#280#0" expanded="true" />
                 <element signature="e#320#321#0" expanded="true" />
@@ -107,9 +98,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/planC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+            <state relative-caret-position="45">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
               <folding>
+                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
                 <element signature="e#256#257#0" expanded="true" />
                 <element signature="e#292#293#0" expanded="true" />
                 <element signature="e#347#348#0" expanded="true" />
@@ -136,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PlanIF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="30">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -145,9 +138,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/planB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="20" column="45" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="45" />
+            <state relative-caret-position="180">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="20" />
               <folding>
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#310#311#0" expanded="true" />
                 <element signature="e#241#242#0" expanded="true" />
                 <element signature="e#295#296#0" expanded="true" />
                 <element signature="e#332#333#0" expanded="true" />
@@ -218,16 +213,16 @@
         <option value="$PROJECT_DIR$/src/Company.java" />
         <option value="$PROJECT_DIR$/src/Employee.java" />
         <option value="$PROJECT_DIR$/src/EmployeeIF.java" />
-        <option value="$PROJECT_DIR$/src/Client.java" />
         <option value="$PROJECT_DIR$/src/Department.java" />
         <option value="$PROJECT_DIR$/src/Leader.java" />
         <option value="$PROJECT_DIR$/src/Manager.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/TaskIF.java" />
+        <option value="$PROJECT_DIR$/src/Client.java" />
         <option value="$PROJECT_DIR$/src/PlanIF.java" />
+        <option value="$PROJECT_DIR$/src/planA.java" />
         <option value="$PROJECT_DIR$/src/planB.java" />
         <option value="$PROJECT_DIR$/src/planC.java" />
-        <option value="$PROJECT_DIR$/src/planA.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -266,7 +261,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557730497943" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557731389575" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -315,7 +310,7 @@
       <workItem from="1556820409324" duration="1516000" />
       <workItem from="1557009580571" duration="1553000" />
       <workItem from="1557241419586" duration="289000" />
-      <workItem from="1557516337977" duration="32907000" />
+      <workItem from="1557516337977" duration="33796000" />
     </task>
     <task id="LOCAL-00001" summary="merge coding with @Jay">
       <created>1557517142636</created>
@@ -415,17 +410,24 @@
       <option name="project" value="LOCAL" />
       <updated>1557725167850</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="employee done! Plans done! Employee done!">
+      <created>1557730532532</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1557730532532</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42307000" />
+    <option name="totallyTimeSpent" value="43196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="91" y="48" width="1400" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14653903" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14653903" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -434,7 +436,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3299363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5312102" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.044585988" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -499,7 +501,8 @@
     <MESSAGE value="factory for service + plans" />
     <MESSAGE value="Marketing people offerDecision chains of responsibility" />
     <MESSAGE value="main simulate real company + fix department" />
-    <option name="LAST_COMMIT_MESSAGE" value="main simulate real company + fix department" />
+    <MESSAGE value="employee done! Plans done! Employee done!" />
+    <option name="LAST_COMMIT_MESSAGE" value="employee done! Plans done! Employee done!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Task.java" />
@@ -632,27 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Department.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -706,17 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Leader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -735,16 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TaskIF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -752,43 +713,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlanIF.java">
+    <entry file="file://$PROJECT_DIR$/src/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="210">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/planB.java">
+    <entry file="file://$PROJECT_DIR$/src/Company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="330">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="44" />
           <folding>
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PlanIF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/planA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
             <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/planC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <state relative-caret-position="45">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding>
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
             <element signature="e#256#257#0" expanded="true" />
             <element signature="e#292#293#0" expanded="true" />
             <element signature="e#347#348#0" expanded="true" />
@@ -811,23 +804,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/planA.java">
+    <entry file="file://$PROJECT_DIR$/src/planB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="180">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="20" />
           <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
             <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2115">
+          <caret line="141" column="63" lean-forward="true" selection-start-line="141" selection-start-column="63" selection-end-line="141" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -37,25 +37,5 @@ public class Client {
         System.out.println("%\n********************************");
     }
 
-    public void printMenu() {
-        System.out.println("Welcome to Company " + c.getName());
-        System.out.println("Marketing advisor " + e.getName() + " will serve for you");
-        System.out.println("Our company provides following plans: ");
-        System.out.println("********************************");
-        System.out.println("Plan A: $ 3 million \n"
-                + "Including: \nConsulting " + "\nSystem design (2 versions)"
-                + "\nDevelopment (5 versions)" + "\nTest" + "\nMaintain (12 months)");
-        System.out.println("********************************");
-        System.out.println("Plan B: $ 2 million \n"
-                + "Including: \nConsulting " + "\nSystem design"
-                + "\nDevelopment (3 versions)" + "\nTest" + "\nMaintain (6 months)");
-        System.out.println("********************************");
-        System.out.println("Plan C: $ 1 million \n"
-                + "Including: \nConsulting " + "\nSystem design"
-                + "\nDevelopment (1 version)" + "\nTest");
-        System.out.println("********************************");
-        System.out.println("Additional function: $ 10 k per each");
-        System.out.println("********************************");
-
-    }*/
+    */
 }
