@@ -11,7 +11,7 @@ public class EditPacketProtectionProxy implements EditPacketIF{
         if(Employee.hasPermission()){
             e.editBase(salary, position, stock);
         }else{
-            System.out.println("No permission");
+            System.out.println("Sorry, No authorization\n");
         }
    }
 
@@ -20,7 +20,7 @@ public class EditPacketProtectionProxy implements EditPacketIF{
         if(Employee.hasPermission()){
             e.editCaseInvolve(c);
         }else{
-            System.out.println("No permission");
+            System.out.println("Sorry, No authorization\n");
         }
     }
 

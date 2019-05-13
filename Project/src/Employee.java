@@ -54,4 +54,8 @@ public abstract class Employee implements EmployeeIF{
         editPacket.getCase();
     }
 
+    public void editBase(double s, int p, int stock){ editPacket.editBase(s,p,stock);}
+
+    public void involvedCase(TaskIF t){editPacket.editCaseInvolve(t);}
+
 }

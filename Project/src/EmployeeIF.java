@@ -11,4 +11,6 @@ public interface EmployeeIF {
     public int getStock();
     public int getPosition();
     public void getCase();
+    public void editBase(double s, int p, int stock);
+    public void involvedCase(TaskIF t);
 }

@@ -124,6 +124,8 @@ public class Main {
             System.out.println(e.getName() +"   "+ e.getDept() + "  " + e.getPosition()+ "\n");
         }
 
+        yusuf.editBase(2, 7, 1000);
+
 
 
 
