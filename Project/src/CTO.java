@@ -5,11 +5,7 @@
  */
 public class CTO extends Leader {
 
-    public CTO(String name, int ID) {
-        super(name, ID);
-    }
-    
-    public void assignDevolopTask(Manager m, Case c){
-        m.assignTask(c);
+    public CTO(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
+        super(i, n, y, sex, d, p, permi);
     }
 }

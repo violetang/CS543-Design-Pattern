@@ -4,8 +4,8 @@
  */
 public class CFO extends Leader {
 
-    public CFO(String name, int ID) {
-        super(name, ID);
+    public CFO(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
+        super(i, n, y, sex, d, p, permi);
     }
     
 }

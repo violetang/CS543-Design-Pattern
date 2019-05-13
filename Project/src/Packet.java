@@ -7,7 +7,7 @@ public class Packet {
     private int stock;
     private ArrayList<TaskIF> caseInvolved;
     
-    public Packet(int baseSalary, int position, int bonus, int stock){
+    public Packet(double baseSalary, int position, double bonus, int stock){
         this.baseSalary = baseSalary;
         this.position = position;
         this.bonus = bonus;

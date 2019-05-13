@@ -25,6 +25,7 @@ public class Client {
     public int changeBudeget(int newB){ return budget = newB; }
 
 
+
     /*
     public void report() {
         System.out.println("********************************");

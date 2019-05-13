@@ -7,8 +7,7 @@ public class Department {
     private ArrayList<Manager> managers;
     private ArrayList<Worker> workers;
 
-    public Department(String name, Leader lead) {
-        this.leader = lead;
+    public Department(String name) {
         this.name = name;
         managers = new ArrayList<>();
         workers = new ArrayList<>();
@@ -17,6 +16,7 @@ public class Department {
     //add a manager to this team
     public void addManager(Manager m) {
         this.managers.add(m);
+        leader.addManager(m);
     }
 
     //add a worker to this team, also assign the worker to a manager
@@ -31,6 +31,7 @@ public class Department {
     public Leader getLeader(){
         return leader;
     }
+    public void setLeader(Leader x){ leader = x;}
 
     //get department name
     public String returnDepartmentName(){
@@ -44,11 +45,5 @@ public class Department {
     public ArrayList<Worker> getWorkers(){
         return workers;
     }
-
-    /*
-    public void setTask(Case c){
-        
-    }
-    */
     
 }
