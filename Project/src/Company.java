@@ -18,6 +18,14 @@ public class Company {
         return this.name;
     }
 
+    public void addEmployee(EmployeeIF e){
+        staffs.add(e);
+    }
+
+    public ArrayList<EmployeeIF> getEmployee(){
+        return staffs;
+    }
+
     /*
     Here is using Abstract Factory
     In the future, the company may add more business and more service

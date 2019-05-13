@@ -19,7 +19,7 @@ public abstract class Employee implements EmployeeIF{
         year = y;
         sexual = sex;
         dept = d;
-        editPacket = new EditPacketProtectionProxy((EditPacket) p);
+        editPacket = p;
         permission = permi;
     }
 

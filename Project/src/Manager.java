@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Manager extends Employee {
 
-    private ArrayList<Worker> team;
+    private ArrayList<Worker> team = new ArrayList<>();
     private Manager colleague;
     private Leader supervisor;
     private boolean isBusy = false;
@@ -27,20 +27,14 @@ public class Manager extends Employee {
     }
 
     public Leader getSupervisor(){ return supervisor;}
+
     public void setSupervisor(Leader l) {
         this.supervisor = l;
-        this.supervisor.addManager(this);
     }
 
     //todo
     public void delegation(Manager m) {
         this.colleague = colleague;
-    }
-
-
-    public void assignTask(Case c, Worker a, Worker b) {
-        //case add worker
-        //trigger the worker to start work
     }
 
     public void isBusy(boolean x){

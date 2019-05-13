@@ -1,8 +1,8 @@
 
 public class EditPacketProtectionProxy implements EditPacketIF{
-    private EditPacket e;
+    private EditPacketIF e;
 
-    public EditPacketProtectionProxy(EditPacket x){
+    public EditPacketProtectionProxy(EditPacketIF x){
         e = x;
     }
 

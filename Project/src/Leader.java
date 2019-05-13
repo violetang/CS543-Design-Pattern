@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Leader extends Employee {
 
-    private ArrayList<Manager> managers;
+    private ArrayList<Manager> myManagers = new ArrayList<>();
     /* from super class
     private int id;
     private String name;
@@ -23,13 +23,14 @@ public class Leader extends Employee {
 
     //About Manager
     public void addManager(Manager m) {
-        managers.add(m);
+        myManagers.add(m);
+        m.setSupervisor(this);
     }
     public void removeManagers(Manager m) {
-        managers.remove(m);
+        myManagers.remove(m);
     }
     public ArrayList<Manager> getManager() {
-        return this.managers;
+        return this.myManagers;
     }
 
 
