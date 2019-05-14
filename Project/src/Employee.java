@@ -9,6 +9,7 @@ public abstract class Employee implements EmployeeIF{
     private Department dept;
     private EditPacketIF editPacket;
     private static boolean permission;
+    private boolean isBusy = false;
 
 
     //private static boolean permission;
@@ -57,5 +58,13 @@ public abstract class Employee implements EmployeeIF{
     public void editBase(double s, int p, int stock){ editPacket.editBase(s,p,stock);}
 
     public void involvedCase(TaskIF t){editPacket.editCaseInvolve(t);}
+
+    public void isBusy(boolean x){
+        isBusy = x;
+    }
+
+    public boolean getBusy(){
+        return isBusy;
+    }
 
 }

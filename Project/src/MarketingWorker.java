@@ -6,11 +6,14 @@ public class MarketingWorker extends Worker {
 
     public boolean offerDecision(Client c, int cost){
 
-        int profit = c.getBudget() - cost;
-        if(profit/cost > 0.30) return true;
+        double profit = c.getBudget() - cost;
+        if((double)(profit/cost) > 0.3) return true;
         else{
+            System.out.println("Need Manager decide");
             MarketingManager s = (MarketingManager) getSupervisor();
             return s.offerDecision(c,cost);
         }
     }
+
+
 }

@@ -6,6 +6,7 @@ public class Client {
     public String name;
     private int budget;
     private char plan;
+    private boolean sign;
 
     //Scanner reader = new Scanner(System.in);
     public Client(String n, int b, char choice) {
@@ -15,14 +16,16 @@ public class Client {
     }
 
     //client sign on the contract
-    public boolean sign(int n){
-        if(n == 1) return true;
+    public boolean sign(boolean n){
+        sign = n;
+        if(sign == true) return true;
         return false;
     }
 
     public int getBudget(){ return budget;}
     public char getPlan(){ return plan;}
     public int changeBudeget(int newB){ return budget = newB; }
+    public boolean getSign(){ return sign ;}
 
 
 

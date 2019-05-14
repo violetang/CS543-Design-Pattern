@@ -89,52 +89,82 @@ public class Main {
         techCom.addEmployee(yusuf);
         Manager anahi = new MarketingManager(5, "Anahi", 2012, "Female", marketing, MarketingManager_packet, false);
         techCom.addEmployee(anahi);
-        ceo.addManager(yusuf);
-        ceo.addManager(anahi);
+        ((CEO) ceo).addManager((MarketingManager) yusuf);
+        ((CEO) ceo).addManager((MarketingManager) anahi);
+
 
         //four workers for Marketing department
         Worker jack = new MarketingWorker(6,"Jack", 2016, "Male", marketing, MarketingWorker_packet, false);
         techCom.addEmployee(jack);
-        yusuf.addWorker(jack);
+        ((MarketingManager)yusuf).addWorker((MarketingWorker) jack);
 
         Worker sophia = new MarketingWorker(7,"Sophia", 2016, "Female", marketing, MarketingWorker_packet, false);
         techCom.addEmployee(sophia);
-        yusuf.addWorker(sophia);
+        ((MarketingManager)yusuf).addWorker((MarketingWorker) sophia);
 
         Worker allen = new MarketingWorker(8,"Allen", 2016, "Male", marketing, MarketingWorker_packet, false);
         techCom.addEmployee(allen);
-        anahi.addWorker(allen);
+        ((MarketingManager)anahi).addWorker((MarketingWorker) allen);
 
         Worker denis = new MarketingWorker(9,"Denis", 2014, "Male", marketing, MarketingWorker_packet, false);
         techCom.addEmployee(denis);
-        anahi.addWorker(denis);
+        ((MarketingManager)anahi).addWorker((MarketingWorker) denis);
 
-        //Two managers for Tech department + workers
+        //Two managers for Tech department
+        Manager jerry = new TechManager(10, "jerry", 2010, "Male", technology, TechManager_packet, false);
+        techCom.addEmployee(jerry);
+
+        Manager henry = new TechManager(11, "henry", 2010, "Male", technology, TechManager_packet, false);
+        techCom.addEmployee(henry);
+
+
+        //four workers for Tech department
+        Worker frank = new TechWorker(12,"frank", 2016, "Male", technology, TechWorker_packet, false);
+        techCom.addEmployee(frank);
+        ((TechManager)jerry).addWorker((TechWorker) frank);
+
+        Worker joey = new TechWorker(13,"joey", 2014, "Female", technology, TechWorker_packet, false);
+        techCom.addEmployee(joey);
+        ((TechManager)jerry).addWorker((TechWorker) joey);
+
+        Worker jay = new TechWorker(14,"jay", 2014, "Female", technology, TechWorker_packet, false);
+        techCom.addEmployee(jay);
+        ((TechManager)henry).addWorker((TechWorker) jay);
+
+        Worker chris = new TechWorker(15,"Chris", 2014, "Female", technology, TechWorker_packet, false);
+        techCom.addEmployee(chris);
+        ((TechManager)henry).addWorker((TechWorker) chris);
+
 
         //Two managers for HR department + workers
 
         //Two managers for Finance department + workers
 
         /*=========== test employee system ===========*/
+        /*
         for(EmployeeIF e: techCom.getEmployee()){
             System.out.println(e.getName() +"   "+ e.getDept() + "  " + e.getPosition()+ "\n");
         }
 
-        for(EmployeeIF e: yusuf.getTeam()){
+        for(EmployeeIF e: ((MarketingManager) yusuf).getTeam()){
+            System.out.println(e.getName() +"   "+ e.getDept() + "  " + e.getPosition()+ "\n");
+        }
+
+        for(EmployeeIF e: ((TechManager) henry).getTeam()){
             System.out.println(e.getName() +"   "+ e.getDept() + "  " + e.getPosition()+ "\n");
         }
 
         yusuf.editBase(2, 7, 1000);
+        */
 
+        /*=========== Start to run the system ===========*/
 
-
-
-        //Start to run business
         //todo: could use a while loop, for user iteraction
 
         //1. Print out plan Menu:
-        System.out.println("Welcome to " + techCom.getName());
-        System.out.println("Our company provides following Software development plans: ");
+        System.out.println("\n");
+        System.out.println("/*=========== Welcome to " + techCom.getName()+" ===========*/");
+        System.out.println("Our company provides following Software development plans: \n");
         System.out.println("********************************");
         System.out.println(c.getName()+ "   Price:  $" + c.getPrice()+ " \nincluding:");
         String[] temp = c.getContext();
@@ -159,19 +189,17 @@ public class Main {
 
 
         //2. assume client choose Plan A, Budget 80k;
-        Client clientA = new Client("clientA", 80000, 'A');
+        //todo: let client input
+        Client clientA = new Client("clientA", 500000, 'A');
 
-        //a marketing worker make a decision
-
-        //client decide to do , and sign the contract
-        clientA.sign(1);
-
-        //Create a case
-        //case start to run
-
-        //case finish
+        //Create the case of client A and assign a marketing worker for it.
+        Case caseOfClientA = new Case("CaseOfClientA", clientA, a,(CEO)ceo,(CFO)cfo,(CTO)cto);
+        caseOfClientA.caseStart();
 
         //client do the survey
+        caseOfClientA.grade(100);
+
+        //hr + financce
 
 
 
