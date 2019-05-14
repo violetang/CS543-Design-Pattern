@@ -4,8 +4,8 @@ public class MarketingManager extends Manager {
 
     private ArrayList<MarketingWorker> team = new ArrayList<>();
 
-    public MarketingManager(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
-        super(i, n, y, sex, d, p, permi);
+    public MarketingManager(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi, Company cc) {
+        super(i, n, y, sex, d, p, permi,cc);
     }
 
     public boolean offerDecision(Client c, int cost){

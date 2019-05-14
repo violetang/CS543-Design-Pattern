@@ -17,8 +17,8 @@ public class Leader extends Employee {
 
 
     //construtor
-    public Leader(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
-        super(i, n, y, sex, d, p, permi);
+    public Leader(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi,Company cc) {
+        super(i, n, y, sex, d, p, permi,cc);
     }
 
 }

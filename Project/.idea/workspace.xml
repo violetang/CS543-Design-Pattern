@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fac0a11-f835-4edc-b61e-3309ddece17a" name="Default Changelist" comment="done State 1 and 2. also fix other class to adapt state">
-      <change afterPath="$PROJECT_DIR$/src/CaseSummaryState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HRManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HRWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PaymentState.java" afterDir="false" />
+    <list default="true" id="1fac0a11-f835-4edc-b61e-3309ddece17a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/CFO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/CFO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/CTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/CTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppDevelopState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppDevelopState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/Case.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/Case.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CEO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CEO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CFO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CFO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FinManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FinWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FinWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HRManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HRManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HRWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HRWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Leader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NegotiateState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NegotiateState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MarketingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarketingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MarketingWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarketingWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TechManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TechManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TechWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TechWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Worker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="194" selection-start-line="194" selection-end-line="194" />
+            <state relative-caret-position="146">
+              <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,50 +44,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppDevelopState.java">
+        <entry file="file://$PROJECT_DIR$/src/MarketingManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-369">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#1846#1847#0" expanded="true" />
-                <element signature="e#1895#1896#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/PaymentState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+            <state relative-caret-position="105">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CaseSummaryState.java">
+        <entry file="file://$PROJECT_DIR$/src/TechManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+            <state relative-caret-position="105">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Case.java">
+        <entry file="file://$PROJECT_DIR$/src/HRManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="98" column="15" lean-forward="true" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
+            <state relative-caret-position="90">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CaseForDatabase.java">
+        <entry file="file://$PROJECT_DIR$/src/FinManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="105">
+              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Worker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TechWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="113" selection-start-line="2" selection-start-column="113" selection-end-line="2" selection-end-column="113" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MarketingWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HRWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FinWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -137,37 +170,37 @@
         <option value="$PROJECT_DIR$/src/EditPacketProtectionProxy.java" />
         <option value="$PROJECT_DIR$/src/Client.java" />
         <option value="$PROJECT_DIR$/src/State.java" />
-        <option value="$PROJECT_DIR$/src/Worker.java" />
         <option value="$PROJECT_DIR$/src/CaseState.java" />
-        <option value="$PROJECT_DIR$/src/Employee.java" />
         <option value="$PROJECT_DIR$/src/EmployeeIF.java" />
-        <option value="$PROJECT_DIR$/src/Leader.java" />
-        <option value="$PROJECT_DIR$/src/CEO.java" />
-        <option value="$PROJECT_DIR$/src/Manager.java" />
-        <option value="$PROJECT_DIR$/src/MarketingManager.java" />
         <option value="$PROJECT_DIR$/src/AppDevelopment.java" />
-        <option value="$PROJECT_DIR$/src/MarketingWorker.java" />
-        <option value="$PROJECT_DIR$/src/TechWorker.java" />
-        <option value="$PROJECT_DIR$/src/CTO.java" />
-        <option value="$PROJECT_DIR$/src/TechManager.java" />
         <option value="$PROJECT_DIR$/src/NegotiateState.java" />
         <option value="$PROJECT_DIR$/src/AppDevelopState.java" />
         <option value="$PROJECT_DIR$/src/CaseSummary.java" />
-        <option value="$PROJECT_DIR$/src/FinWorker.java" />
-        <option value="$PROJECT_DIR$/src/FinManager.java" />
-        <option value="$PROJECT_DIR$/src/HRWorker.java" />
-        <option value="$PROJECT_DIR$/src/CFO.java" />
         <option value="$PROJECT_DIR$/src/Case.java" />
-        <option value="$PROJECT_DIR$/src/PaymentState.java" />
-        <option value="$PROJECT_DIR$/src/HRManager.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/CaseSummaryState.java" />
+        <option value="$PROJECT_DIR$/src/PaymentState.java" />
+        <option value="$PROJECT_DIR$/src/Employee.java" />
+        <option value="$PROJECT_DIR$/src/CEO.java" />
+        <option value="$PROJECT_DIR$/src/CFO.java" />
+        <option value="$PROJECT_DIR$/src/CTO.java" />
+        <option value="$PROJECT_DIR$/src/Leader.java" />
+        <option value="$PROJECT_DIR$/src/Manager.java" />
+        <option value="$PROJECT_DIR$/src/MarketingManager.java" />
+        <option value="$PROJECT_DIR$/src/TechManager.java" />
+        <option value="$PROJECT_DIR$/src/HRManager.java" />
+        <option value="$PROJECT_DIR$/src/FinManager.java" />
+        <option value="$PROJECT_DIR$/src/Worker.java" />
+        <option value="$PROJECT_DIR$/src/TechWorker.java" />
+        <option value="$PROJECT_DIR$/src/MarketingWorker.java" />
+        <option value="$PROJECT_DIR$/src/HRWorker.java" />
+        <option value="$PROJECT_DIR$/src/FinWorker.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="19" />
-    <option name="y" value="29" />
+    <option name="x" value="44" />
+    <option name="y" value="41" />
     <option name="width" value="1400" />
     <option name="height" value="877" />
   </component>
@@ -200,7 +233,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557867241149" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557871018877" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -249,7 +282,7 @@
       <workItem from="1556820409324" duration="1516000" />
       <workItem from="1557009580571" duration="1553000" />
       <workItem from="1557241419586" duration="289000" />
-      <workItem from="1557516337977" duration="57070000" />
+      <workItem from="1557516337977" duration="60454000" />
     </task>
     <task id="LOCAL-00001" summary="merge coding with @Jay">
       <created>1557517142636</created>
@@ -377,17 +410,24 @@
       <option name="project" value="LOCAL" />
       <updated>1557859763099</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add payment and summary state. build CFO HR Manager,worker, Fin Manager, worker">
+      <created>1557867341716</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1557867341716</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66470000" />
+    <option name="totallyTimeSpent" value="69854000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="29" width="1400" height="877" extended-state="0" />
+    <frame x="-74" y="23" width="1400" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20839469" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0802651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -396,7 +436,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3299363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5312102" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2356688" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17324841" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -416,7 +456,7 @@
       <window_info anchor="right" id="Database" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20839469" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20839469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -425,7 +465,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3299363" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.5312102" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.61273885" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.17324841" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -465,7 +505,8 @@
     <MESSAGE value="Plan done!" />
     <MESSAGE value="employeeIF and abstract class add editbase and involoved cases funtion" />
     <MESSAGE value="done State 1 and 2. also fix other class to adapt state" />
-    <option name="LAST_COMMIT_MESSAGE" value="done State 1 and 2. also fix other class to adapt state" />
+    <MESSAGE value="add payment and summary state. build CFO HR Manager,worker, Fin Manager, worker" />
+    <option name="LAST_COMMIT_MESSAGE" value="add payment and summary state. build CFO HR Manager,worker, Fin Manager, worker" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ClientNegotiate.java" />
@@ -584,31 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Leader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmployeeIF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CaseState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -616,45 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppDevelopment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CEO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -686,34 +667,6 @@
             <element signature="e#341#342#0" expanded="true" />
             <element signature="e#395#396#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MarketingWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MarketingManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -754,69 +707,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CaseDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TechWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="5" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TechManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="10" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Case.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="98" column="15" lean-forward="true" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CFO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HRManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppDevelopState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="36">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="65" />
           <folding>
             <element signature="e#1846#1847#0" expanded="true" />
             <element signature="e#1895#1896#0" expanded="true" />
@@ -824,27 +718,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinWorker.java">
+    <entry file="file://$PROJECT_DIR$/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HRWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
+        <state relative-caret-position="-128">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CaseSummaryState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PaymentState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="69" column="28" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Case.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="98" column="15" lean-forward="true" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -855,17 +756,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CaseSummaryState.java">
+    <entry file="file://$PROJECT_DIR$/src/Company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        <state relative-caret-position="131">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PaymentState.java">
+    <entry file="file://$PROJECT_DIR$/src/CaseDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        <state relative-caret-position="105">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmployeeIF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CEO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CFO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Leader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketingManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HRManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TechWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="113" selection-start-line="2" selection-start-column="113" selection-end-line="2" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketingWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HRWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TechManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

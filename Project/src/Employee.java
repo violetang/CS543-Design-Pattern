@@ -10,11 +10,12 @@ public abstract class Employee implements EmployeeIF{
     private EditPacketIF editPacket;
     private static boolean permission;
     private boolean isBusy = false;
+    public Company company;
 
 
     //private static boolean permission;
 
-    public Employee(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
+    public Employee(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi, Company cc) {
         id = i;
         name = n;
         year = y;
@@ -22,6 +23,7 @@ public abstract class Employee implements EmployeeIF{
         dept = d;
         editPacket = p;
         permission = permi;
+        company = cc;
     }
 
 

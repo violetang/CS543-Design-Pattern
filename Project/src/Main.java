@@ -77,44 +77,44 @@ public class Main {
         /*=========== build employee system ===========*/
 
         //Leaders: CEO, CFO, CTO
-        Leader ceo = new CEO(1,"Zuck", 2000, "Male", marketing, leader_packet, true);
-        Leader cfo = new CFO(2, "Matt", 2003, "Female", finance, leader_packet, true);
-        Leader cto = new CTO(3, "Hook", 2005, "Male", technology, leader_packet, true);
+        Leader ceo = new CEO(1,"Zuck", 2000, "Male", marketing, leader_packet, true, techCom);
+        Leader cfo = new CFO(2, "Matt", 2003, "Female", finance, leader_packet, true, techCom);
+        Leader cto = new CTO(3, "Hook", 2005, "Male", technology, leader_packet, true, techCom);
         techCom.addEmployee(ceo);
         techCom.addEmployee(cfo);
         techCom.addEmployee(cto);
 
         //Two managers for Marketing department
-        Manager yusuf = new MarketingManager(4, "Yusuf", 2010, "Male", marketing, MarketingManager_packet, false);
+        Manager yusuf = new MarketingManager(4, "Yusuf", 2010, "Male", marketing, MarketingManager_packet, false, techCom);
         techCom.addEmployee(yusuf);
-        Manager anahi = new MarketingManager(5, "Anahi", 2012, "Female", marketing, MarketingManager_packet, false);
+        Manager anahi = new MarketingManager(5, "Anahi", 2012, "Female", marketing, MarketingManager_packet, false, techCom);
         techCom.addEmployee(anahi);
         ((CEO) ceo).addManager((MarketingManager) yusuf);
         ((CEO) ceo).addManager((MarketingManager) anahi);
 
 
         //four workers for Marketing department
-        Worker jack = new MarketingWorker(6,"Jack", 2016, "Male", marketing, MarketingWorker_packet, false);
+        Worker jack = new MarketingWorker(6,"Jack", 2016, "Male", marketing, MarketingWorker_packet, false, techCom);
         techCom.addEmployee(jack);
         ((MarketingManager)yusuf).addWorker((MarketingWorker) jack);
 
-        Worker sophia = new MarketingWorker(7,"Sophia", 2016, "Female", marketing, MarketingWorker_packet, false);
+        Worker sophia = new MarketingWorker(7,"Sophia", 2016, "Female", marketing, MarketingWorker_packet, false, techCom);
         techCom.addEmployee(sophia);
         ((MarketingManager)yusuf).addWorker((MarketingWorker) sophia);
 
-        Worker allen = new MarketingWorker(8,"Allen", 2016, "Male", marketing, MarketingWorker_packet, false);
+        Worker allen = new MarketingWorker(8,"Allen", 2016, "Male", marketing, MarketingWorker_packet, false, techCom);
         techCom.addEmployee(allen);
         ((MarketingManager)anahi).addWorker((MarketingWorker) allen);
 
-        Worker denis = new MarketingWorker(9,"Denis", 2014, "Male", marketing, MarketingWorker_packet, false);
+        Worker denis = new MarketingWorker(9,"Denis", 2014, "Male", marketing, MarketingWorker_packet, false, techCom);
         techCom.addEmployee(denis);
         ((MarketingManager)anahi).addWorker((MarketingWorker) denis);
 
         //Two managers for Tech department
-        Manager jerry = new TechManager(10, "Jerry", 2010, "Male", technology, TechManager_packet, false);
+        Manager jerry = new TechManager(10, "Jerry", 2010, "Male", technology, TechManager_packet, false, techCom);
         techCom.addEmployee(jerry);
 
-        Manager henry = new TechManager(11, "Henry", 2010, "Male", technology, TechManager_packet, false);
+        Manager henry = new TechManager(11, "Henry", 2010, "Male", technology, TechManager_packet, false, techCom);
         techCom.addEmployee(henry);
 
         ((CTO) cto).addManager((TechManager) jerry);
@@ -122,74 +122,74 @@ public class Main {
 
 
         //four workers for Tech department
-        Worker frank = new TechWorker(12,"Frank", 2016, "Male", technology, TechWorker_packet, false);
+        Worker frank = new TechWorker(12,"Frank", 2016, "Male", technology, TechWorker_packet, false, techCom);
         techCom.addEmployee(frank);
         ((TechManager)jerry).addWorker((TechWorker) frank);
 
-        Worker joey = new TechWorker(13,"Joey", 2014, "Female", technology, TechWorker_packet, false);
+        Worker joey = new TechWorker(13,"Joey", 2014, "Female", technology, TechWorker_packet, false, techCom);
         techCom.addEmployee(joey);
         ((TechManager)jerry).addWorker((TechWorker) joey);
 
-        Worker jay = new TechWorker(14,"Jay", 2014, "Female", technology, TechWorker_packet, false);
+        Worker jay = new TechWorker(14,"Jay", 2014, "Female", technology, TechWorker_packet, false, techCom);
         techCom.addEmployee(jay);
         ((TechManager)henry).addWorker((TechWorker) jay);
 
-        Worker chris = new TechWorker(15,"Chris", 2014, "Female", technology, TechWorker_packet, false);
+        Worker chris = new TechWorker(15,"Chris", 2014, "Female", technology, TechWorker_packet, false, techCom);
         techCom.addEmployee(chris);
         ((TechManager)henry).addWorker((TechWorker) chris);
 
 
         //Two managers for Finance department
-        Manager jeff = new FinManager(16, "Jeff", 2010, "Male", finance, HR_Fin_Manager_packet, false);
+        Manager jeff = new FinManager(16, "Jeff", 2010, "Male", finance, HR_Fin_Manager_packet, false, techCom);
         techCom.addEmployee(jeff);
 
-        Manager angenla = new FinManager(17, "Angenla", 2009, "Femal", finance, HR_Fin_Manager_packet, false);
+        Manager angenla = new FinManager(17, "Angenla", 2009, "Femal", finance, HR_Fin_Manager_packet, false, techCom);
         techCom.addEmployee(angenla);
 
         ((CFO) cfo).addFinManager((FinManager) jeff);
         ((CFO) cfo).addFinManager((FinManager) angenla);
 
         //four workers for Finance department
-        Worker willian = new FinWorker(18,"Willian", 2016, "Male", finance, HR_Fin_Worker_packet, false);
+        Worker willian = new FinWorker(18,"Willian", 2016, "Male", finance, HR_Fin_Worker_packet, false, techCom);
         techCom.addEmployee(willian);
         ((FinManager)jeff).addWorker((FinWorker) willian);
 
-        Worker mary = new FinWorker(19,"Mary", 2015, "Female", finance, HR_Fin_Worker_packet, false);
+        Worker mary = new FinWorker(19,"Mary", 2015, "Female", finance, HR_Fin_Worker_packet, false, techCom);
         techCom.addEmployee(mary);
         ((FinManager)jeff).addWorker((FinWorker) mary);
 
-        Worker brany = new FinWorker(20,"Brany", 2015, "Female", finance, HR_Fin_Worker_packet, false);
+        Worker brany = new FinWorker(20,"Brany", 2015, "Female", finance, HR_Fin_Worker_packet, false, techCom);
         techCom.addEmployee(brany);
         ((FinManager)angenla).addWorker((FinWorker) brany);
 
-        Worker mark = new FinWorker(21,"Mark", 2015, "Male", finance, HR_Fin_Worker_packet, false);
+        Worker mark = new FinWorker(21,"Mark", 2015, "Male", finance, HR_Fin_Worker_packet, false, techCom);
         techCom.addEmployee(mark);
         ((FinManager)angenla).addWorker((FinWorker) mark);
 
         //Two managers for Finance department + workers
-        Manager zack = new HRManager(22, "Zack", 2008, "Male", HR, HR_Fin_Manager_packet, true);
+        Manager zack = new HRManager(22, "Zack", 2008, "Male", HR, HR_Fin_Manager_packet, true, techCom);
         techCom.addEmployee(zack);
 
-        Manager hanna = new HRManager(23, "Hanna", 2009, "Female", HR, HR_Fin_Manager_packet, true);
+        Manager hanna = new HRManager(23, "Hanna", 2009, "Female", HR, HR_Fin_Manager_packet, true, techCom);
         techCom.addEmployee(hanna);
 
         ((CFO) cfo).addHRManager((HRManager) zack);
         ((CFO) cfo).addHRManager((HRManager) hanna);
 
         //four workers for HR department
-        Worker yoshi = new HRWorker(24,"Yoshi", 2016, "Female", HR, HR_Fin_Worker_packet, true);
+        Worker yoshi = new HRWorker(24,"Yoshi", 2016, "Female", HR, HR_Fin_Worker_packet, true, techCom);
         techCom.addEmployee(yoshi);
         ((HRManager)zack).addWorker((HRWorker) yoshi);
 
-        Worker ahamad = new HRWorker(25,"Ahamad", 2016, "Male", HR, HR_Fin_Worker_packet, true);
+        Worker ahamad = new HRWorker(25,"Ahamad", 2016, "Male", HR, HR_Fin_Worker_packet, true, techCom);
         techCom.addEmployee(ahamad);
         ((HRManager)zack).addWorker((HRWorker) ahamad);
 
-        Worker yang = new HRWorker(26,"yANG", 2016, "Female", HR, HR_Fin_Worker_packet, true);
+        Worker yang = new HRWorker(26,"yANG", 2016, "Female", HR, HR_Fin_Worker_packet, true, techCom);
         techCom.addEmployee(yang);
         ((HRManager)hanna).addWorker((HRWorker) yang);
 
-        Worker sunny = new HRWorker(27,"Sunny", 2015, "Female", HR, HR_Fin_Worker_packet, true);
+        Worker sunny = new HRWorker(27,"Sunny", 2015, "Female", HR, HR_Fin_Worker_packet, true, techCom);
         techCom.addEmployee(sunny);
         ((HRManager)hanna).addWorker((HRWorker) sunny);
 

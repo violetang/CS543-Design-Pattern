@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class HRManager extends Manager {
     private ArrayList<HRWorker> team = new ArrayList<>();
 
-    public HRManager(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
-        super(i, n, y, sex, d, p, permi);
+    public HRManager(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi, Company cc) {
+        super(i, n, y, sex, d, p, permi,cc);
     }
 
     public void addWorker(HRWorker w) {

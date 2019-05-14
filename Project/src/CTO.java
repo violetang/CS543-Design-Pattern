@@ -9,8 +9,8 @@ public class CTO extends Leader {
 
     private ArrayList<TechManager> myManagers = new ArrayList<>();
 
-    public CTO(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
-        super(i, n, y, sex, d, p, permi);
+    public CTO(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi, Company cc) {
+        super(i, n, y, sex, d, p, permi,cc);
     }
 
     //About Manager

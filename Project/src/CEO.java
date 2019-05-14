@@ -8,8 +8,8 @@ public class CEO extends Leader {
 
     private ArrayList<MarketingManager> myManagers = new ArrayList<>();
 
-    public CEO(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
-        super(i, n, y, sex, d, p, permi);
+    public CEO(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi, Company cc) {
+        super(i, n, y, sex, d, p, permi,cc);
     }
 
     public boolean offerDecision(Client c,int cost){

@@ -31,33 +31,43 @@ public class PaymentState implements CaseState {
     }
 
     @Override
+    //todo: let the client grade it.
     public void start() {
 
         System.out.println("\n############# 3. Payment and survey State #############");
         createTeam();
 
         //calculate how much client need pay and ask them pay
-        //ask client grade it. save the grade
-        //if client pay it -> finish
-        //if they deesn't pay -> failed
+        System.out.println("\n--Calculate the bill");
+        mycase.fw.calculatePayment(mycase);
 
-        //create Case for casedatabase
-        //save it to company's case database
+        System.out.println("\n--Client grade our job");
+        mycase.fw.caseSurvey(mycase,100);
 
-        changeState(new CaseSummaryState(mycase));
+        System.out.println("\n--Please pay for the bill: yes - 1 or no - 0 ");
+        int payment = 1;
+        if(payment == 1){
+            System.out.println("Payment Received!");
+            finish();
+            changeState(new CaseSummaryState(mycase));
+            mycase.caseContinue();
+        }else failed();
+
         releaseTeam();
-        mycase.caseContinue();
+
 
     }
 
     @Override
     public void failed() {
-
+        System.out.println("Client didn't pay. Payment failed");
+        mycase.caseFailed();
     }
 
     @Override
     public void finish() {
-
+        System.out.println("\n--upload the case to Company case databse ");
+        mycase.fw.uploadCase(mycase);
     }
 
     @Override
@@ -70,9 +80,5 @@ public class PaymentState implements CaseState {
         for(EmployeeIF e: team){
             e.isBusy(false);
         }
-    }
-
-    public ArrayList<EmployeeIF> getTeam() {
-        return team;
     }
 }
