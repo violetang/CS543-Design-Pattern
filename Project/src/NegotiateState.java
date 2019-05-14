@@ -45,7 +45,7 @@ public class NegotiateState implements CaseState {
     @Override
     public void start() {
 
-        System.out.println("\n#1. Negotiate State:");
+        System.out.println("\n############# 1. Negotiate State #############");
 
         //create the team
         createTeam();

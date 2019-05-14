@@ -23,4 +23,16 @@ public class TechManager extends Manager {
     public ArrayList<TechWorker> getTeam() {
         return this.team;
     }
+
+    public void work(Case c){
+
+        scheduleAndPlan();
+        ((CTO)getSupervisor()).approve(c);
+        c.tw.development(c);
+
+    }
+
+    public void scheduleAndPlan(){
+        System.out.println("Manager "+ getName()+ " scheduled the timeline and Development plan.");
+    }
 }

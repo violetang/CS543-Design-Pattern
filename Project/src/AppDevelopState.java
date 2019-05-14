@@ -13,7 +13,7 @@ public class AppDevelopState implements CaseState {
     //create Tech team (one manager + one worker)
     @Override
     public void createTeam() {
-        System.out.println("\nCreating Technology team:");
+        System.out.println("\n--Creating Technology team:");
         for(TechManager aa: mycase.cto.getManager()){
             if(aa.getBusy() == false){
                 mycase.addTechManager(aa);
@@ -42,30 +42,36 @@ public class AppDevelopState implements CaseState {
     @Override
     public void start() {
 
-        System.out.println("\n#2. Software development State:");
+        System.out.println("\n############# 2. Software development State #############");
 
         //create a tech team
         createTeam();
 
-        //a tech worker start to work on it
-
-
-
+        //a tech manager start to work on it
+        System.out.println("\n--Starts working on the software");
+        mycase.tm.work(mycase);
+        finish();
+        changeState(new PaymentState(mycase));
+        mycase.caseContinue();
     }
 
     @Override
     public void failed() {
-        System.out.println("");
+
+        System.out.println("need extra month");
+        releaseTeam();
+        start();
     }
 
     @Override
     public void finish() {
-
+        System.out.println("\n--Software done! Please check");
+        releaseTeam();
     }
 
     @Override
     public void changeState(CaseState nextStage) {
-
+        mycase.updateCaseState(nextStage);
     }
 
     @Override

@@ -1,32 +1,41 @@
 import java.util.ArrayList;
 
-/**
- *
- * @author jayxu
- */
 public class CFO extends Leader {
 
-    private ArrayList<MarketingManager> myHRManagers = new ArrayList<>();
-    private ArrayList<MarketingManager> myFinManagers = new ArrayList<>();
+    private ArrayList<HRManager> myHRManagers = new ArrayList<>();
+    private ArrayList<FinManager> myFinManagers = new ArrayList<>();
 
     public CFO(int i, String n, int y, String sex, Department d, EditPacketIF p, boolean permi) {
         super(i, n, y, sex, d, p, permi);
     }
 
-    /*
-    //About Manager
-    public void addManager(TechManager m) {
-        myManagers.add(m);
+    //About Fin Manager
+    public void addFinManager(FinManager m) {
+        myFinManagers.add(m);
         m.setSupervisor(this);
     }
 
-    public ArrayList<TechManager> getManager() {
-        return myManagers;
+    public ArrayList<FinManager> getFinManager() {
+        return myFinManagers;
     }
 
-    public void removeManagers(Manager m) {
-        myManagers.remove(m);
+    public void removeFinManagers(Manager m) {
+        myFinManagers.remove(m);
     }
-    */
+
+    //About HR Manager
+    public void addHRManager(HRManager m) {
+        myHRManagers.add(m);
+        m.setSupervisor(this);
+    }
+
+    public ArrayList<HRManager> getHRManager() {
+        return myHRManagers;
+    }
+
+    public void removeHRManagers(Manager m) {
+        myHRManagers.remove(m);
+    }
+
     
 }

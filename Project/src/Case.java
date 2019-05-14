@@ -8,17 +8,18 @@ public class Case implements TaskIF {
     private PlanIF plan;
     private int grade;
     public ArrayList<EmployeeIF> team;
-    public MarketingWorker mw;
-    public MarketingManager mm;
 
     public CTO cto;
     public CEO ceo;
     public CFO cfo;
     public TechManager tm;
     public TechWorker tw;
-
-    //public FinWorker fw;
-    //public HrWorker hw;
+    public MarketingWorker mw;
+    public MarketingManager mm;
+    public FinWorker fw;
+    public FinManager fm;
+    public HRWorker hw;
+    public HRManager hm;
 
     public Case(String n, Client c, PlanIF p, CEO cc, CFO ff, CTO tt){
         caseName = n;
@@ -77,6 +78,34 @@ public class Case implements TaskIF {
         tw = n;
         team.add(tw);
         tw.isBusy(true);
+    }
+
+    //Finance team
+    public void addFinManager(FinManager e){
+        fm = e;
+        team.add(fm);
+        fm.isBusy(true);
+
+    }
+
+    public void addFinWorker(FinWorker n){
+        fw = n;
+        team.add(fw);
+        fw.isBusy(true);
+    }
+
+    //HR team
+    public void addHRManager(HRManager e){
+        hm = e;
+        team.add(hm);
+        hm.isBusy(true);
+
+    }
+
+    public void addHRWorker(HRWorker n){
+        hw = n;
+        team.add(hw);
+        hw.isBusy(true);
     }
 
     public void grade(int g){ grade = g;}

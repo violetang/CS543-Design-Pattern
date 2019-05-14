@@ -26,4 +26,9 @@ public class CTO extends Leader {
     public void removeManagers(Manager m) {
         myManagers.remove(m);
     }
+
+    public void approve(Case c){
+
+        System.out.println("CTO Approved it");
+    }
 }
