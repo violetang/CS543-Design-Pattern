@@ -50,8 +50,22 @@ public class Case implements TaskIF {
 
     public void caseDone(){
         System.out.println("\nThe Whole CaseDone!");
+        display();
     }
 
+    public void display(){
+        //Client + Plan + Grade
+        System.out.println("Client: "+ client.name);
+        System.out.println("Plan: "+ plan.getName());
+        System.out.println("Budge: "+ client.getBudget());
+        System.out.println("Grade: " + grade);
+        System.out.println("Team: ");
+        //whole team
+        System.out.println("Marketing Manager: " + mm.getName() + ",     Marketing worker: " + mw.getName());
+        System.out.println("Technology Manager: " + tm.getName() + ",    Technoloy worker :" + tw.getName());
+        System.out.println("Finance Manager: " + fm.getName() + ",   Finance worker: " + fw.getName());
+        System.out.println("HR Manager: " + hm.getName() + ",    HR worker: " + hw.getName());
+    }
 
     //Markeing team
     public void addMarketingWorker(MarketingWorker e){
@@ -109,6 +123,8 @@ public class Case implements TaskIF {
     }
 
     public void grade(int g){ grade = g;}
+
+    public int getGrade(){ return grade;}
 
     public Client returnClient(){
         return client;

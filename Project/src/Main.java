@@ -192,25 +192,30 @@ public class Main {
         ((HRManager)hanna).addWorker((HRWorker) sunny);
 
 
-        System.out.println("Testing if employee can access their packet and change the information");
-        yusuf.editBase(2, 7, 1000);
-
         /*=========== test employee system ===========*/
-
+        System.out.println("\n1. Testing Employee System, Print out company's all employee");
+        //todo: format print
+        System.out.println("ID      Name        Department    Position    Salary");
         for(EmployeeIF e: techCom.getEmployee()){
-            System.out.println(e.getName() +"   "+ e.getDept() + "  " + e.getPosition()+ "\n");
+            System.out.println(e.getID()+"      "+ e.getName() +"        "+ e.getDept() + "      " + e.getPosition()+ "       "+e.getSalary());
         }
 
+        System.out.println("\n2. Testing Manager's team of works\n");
+        System.out.println("Marketing Manager " + yusuf.getName() + " has: ");
         for(EmployeeIF e: ((MarketingManager) yusuf).getTeam()){
-            System.out.println(e.getName() +"   "+ e.getDept() + "  " + e.getPosition()+ "\n");
+            System.out.println(e.getID()+"      "+ e.getName() +"        "+ e.getDept() + "      " + e.getPosition()+ "       "+e.getSalary());
         }
 
+        System.out.println("\nTech Manager " + henry.getName() + " has: ");
         for(EmployeeIF e: ((TechManager) henry).getTeam()){
-            System.out.println(e.getName() +"   "+ e.getDept() + "  " + e.getPosition()+ "\n");
+            System.out.println(e.getID()+"      "+ e.getName() +"        "+ e.getDept() + "      " + e.getPosition()+ "       "+e.getSalary());
         }
 
+
+        System.out.println("\n3. Testing if employee try to access their packet and change the information");
         yusuf.editBase(2, 7, 1000);
-        yoshi.editBase(3,6 ,2000);
+        brany.editBase(2, 7, 1000);
+        willian.editBase(3,6 ,2000);
 
         /*=========== Start to run the system ===========*/
 
@@ -262,9 +267,16 @@ public class Main {
         Case caseOfClientA = new Case(clientName, clientA, a,(CEO)ceo,(CFO)cfo,(CTO)cto);
         caseOfClientA.caseStart();
 
-        /*=========== Employee performance evaluation ===========*/
+        //print company case database
+        System.out.println("========= "+techCom.getName() + " Case Database "+"========= ");
+        techCom.getCaseDatabases().print();
 
+        /*=========== Employee performance evaluation ===========*/
+        //only print out whose salary has been changed.
+        System.out.println("\n========= "+techCom.getName() + " Yearly Performance evaluation "+"=========\n");
+
+        ((HRWorker)sunny).evaluation();
 
     }
-    //hr start to evaluate and print out the results.
+
 }

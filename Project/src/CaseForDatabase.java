@@ -6,11 +6,12 @@ public class CaseForDatabase {
     private PlanIF plan;
     private int year;
     private int profit;
+    private int grade;
     private ArrayList<Manager> managers;
     private ArrayList<Worker> workers;
 
     //constructor
-    public CaseForDatabase(String n, Client c, PlanIF p, int y, int pro, ArrayList<Manager> m, ArrayList<Worker> w){
+    public CaseForDatabase(String n, Client c, PlanIF p, int y, int pro, int g, ArrayList<Manager> m, ArrayList<Worker> w){
         CaseName = n;
         client = c;
         plan = p;
@@ -18,6 +19,7 @@ public class CaseForDatabase {
         profit = pro;
         managers = m;
         workers = w;
+        grade = g;
     }
 
     public String getCaseName(){return CaseName;}
@@ -25,6 +27,10 @@ public class CaseForDatabase {
     public String getPlan(){ return plan.getName();}
     public int getYear(){return year;};
     public int getProfit(){return profit;}
+    public int getGrade(){return grade;}
+    public ArrayList<Manager> getManagers(){ return managers;}
+    public ArrayList<Worker> getWorkers(){ return workers;}
+
 
 
 }

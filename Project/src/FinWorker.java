@@ -10,7 +10,7 @@ public class FinWorker extends Worker {
         System.out.println("Finance " + getName()+ "is Working on calculating the bill" );
         int profit = C.client.getBudget() - C.getPlan().getCost();
         if(((FinManager)getSupervisor()).doubleCheck(C,profit)){
-            System.out.println("Client "+ C.client.name+ " Bill $ "+ profit);
+            System.out.println("Client "+ C.client.name+ " Bill $ "+ C.getPlan().getCost());
         }
     }
 
@@ -23,18 +23,20 @@ public class FinWorker extends Worker {
         int profit = c.client.getBudget() - c.getPlan().getCost();
         ArrayList<Manager> m = new ArrayList<>();
         ArrayList<Worker> w = new ArrayList<>();
+        m.add(c.mm);
         m.add(c.tm);
         m.add(c.fm);
-        m.add(c.hm);
-        m.add(c.mm);
+        for(Manager mm: m){
+            System.out.println(mm.getName());
+        }
 
         w.add(c.fw);
-        w.add(c.hw);
         w.add(c.mw);
         w.add(c.tw);
 
         System.out.println("Finance " + getName()+ " is Working on Case update" );
-        CaseForDatabase temp = new CaseForDatabase(c.caseName,c.client,c.getPlan(),2020, profit, m, w);
+        CaseForDatabase temp = new CaseForDatabase(c.caseName,c.client,c.getPlan(),2020, profit, c.getGrade(),m, w);
+
         company.getCaseDatabases().addCase(temp);
         //company.getCaseDatabases().print();
     }

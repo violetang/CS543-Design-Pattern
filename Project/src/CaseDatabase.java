@@ -19,9 +19,9 @@ public class CaseDatabase {
     }
 
     public void print(){
-        System.out.println("CaseName            Client      Plan        Year        Profit");
+        System.out.println("CaseName     Client      Plan        Year        Profit      Grade");
         for(CaseForDatabase C : database){
-            System.out.println(C.getCaseName() + "      " + C.getClient() + "      "+ C.getPlan()+ "       "+ C.getYear() + "      "+ C.getProfit());
+            System.out.println(C.getCaseName() + "      " + C.getClient() + "      "+ C.getPlan()+ "       "+ C.getYear() + "      "+ C.getProfit() + "     "+ C.getGrade());
         }
     }
 

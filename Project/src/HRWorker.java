@@ -20,4 +20,30 @@ public class HRWorker extends Worker {
         }
 
     }
+
+    public void evaluation(){
+        ArrayList<CaseForDatabase> cases = company.getCaseDatabases().returnDatabase();
+        for(CaseForDatabase theCase: cases){
+            int grade = theCase.getGrade();
+            int profit = theCase.getProfit();
+            double bonus = (grade/100)*profit;
+            ArrayList<Manager> managers = theCase.getManagers();
+            for(Manager m: managers){
+                m.setPermission(true);
+                System.out.println("Can get bonus from the Case "+ theCase.getCaseName()+ " is "+ bonus * m.getBonus() * 0.1);
+                double SalaryThisYear = m.getSalary() + bonus* m.getBonus()* 0.1;
+                m.setPermission(false);
+                System.out.println(m.getName() + ": After add your contribution to those cases, your salary of this year is :" + SalaryThisYear+"\n");
+            }
+            ArrayList<Worker> workers = theCase.getWorkers();
+            for(Worker m: workers){
+                System.out.println("Can get bonus from the Case "+ theCase.getCaseName()+ " is "+ bonus * m.getBonus() * 0.05);
+                m.setPermission(true);
+                double SalaryThisYear = m.getSalary() + bonus* m.getBonus()* 0.05;
+                m.setPermission(false);
+                System.out.println(m.getName() + ": After add your contribution to those cases, your salary of this year is :" + SalaryThisYear+"\n");
+            }
+        }
+
+    }
 }
