@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class NegotiateState implements CaseState {
 
@@ -55,8 +56,6 @@ public class NegotiateState implements CaseState {
         boolean decision= mycase.mw.offerDecision(mycase.client,mycase.getPlan().getCost());
         if(decision == true){
             finish();
-            changeState(new AppDevelopState(mycase));
-            mycase.caseContinue();
         }else {
             failed();
         }
@@ -82,7 +81,18 @@ public class NegotiateState implements CaseState {
      */
     @Override
     public void finish() {
-        System.out.println("Great! Hope we can have a great cooperation experience");
+        System.out.println("Yes, we can do it. Here is the contract, please sign it: (1 = sign or 0 = not sign)");
+        Scanner scanner = new Scanner(System.in);
+        int ans = scanner.nextInt();
+        if(ans == 1){
+            System.out.println("Great! Hope we can have a great cooperation experience");
+            changeState(new AppDevelopState(mycase));
+            mycase.caseContinue();
+        }else if(ans == 0){
+            mycase.caseFailed();
+        }else{
+            System.out.println("Invalid Input");
+        }
         releaseTeam();
     }
 

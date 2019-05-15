@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class AppDevelopState implements CaseState {
 
@@ -50,8 +51,6 @@ public class AppDevelopState implements CaseState {
         System.out.println("\n--Starts working on the software");
         mycase.tm.work(mycase);
         finish();
-        changeState(new PaymentState(mycase));
-        mycase.caseContinue();
     }
 
     @Override
@@ -64,8 +63,20 @@ public class AppDevelopState implements CaseState {
 
     @Override
     public void finish() {
-        System.out.println("\n--Software done! Please check");
-        releaseTeam();
+        System.out.println("\n--Software done! Please check: ");
+        System.out.println("Enter:  1 = Accept, 0 = Not Accept ");
+        Scanner scanner = new Scanner(System.in);
+        int ans = scanner.nextInt();
+        if(ans == 1){
+            releaseTeam();
+            changeState(new PaymentState(mycase));
+            mycase.caseContinue();
+        }else if(ans == 0){
+            mycase.caseFailed();
+        }else{
+            System.out.println("Invalid Input");
+        }
+
     }
 
     @Override

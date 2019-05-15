@@ -21,7 +21,6 @@ public class Main {
         Department HR = new Department("HR");
         Department finance = new Department("Finance");
 
-
         /*=========== 2. build Packet Standard ===========*/
         /*
            Leader:              baseSalary - 500000, Position - Level 7, Bonus - 30%, stock: 1000
@@ -263,11 +262,9 @@ public class Main {
         Case caseOfClientA = new Case(clientName, clientA, a,(CEO)ceo,(CFO)cfo,(CTO)cto);
         caseOfClientA.caseStart();
 
-        //client do the survey
-        caseOfClientA.grade(100);
+        /*=========== Employee performance evaluation ===========*/
+
 
     }
-
-    //6 months, employee performance evaluation
     //hr start to evaluate and print out the results.
 }

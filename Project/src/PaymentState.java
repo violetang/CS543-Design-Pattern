@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class PaymentState implements CaseState {
 
@@ -40,13 +41,16 @@ public class PaymentState implements CaseState {
         System.out.println("\n--Calculate the bill");
         mycase.fw.calculatePayment(mycase);
 
-        System.out.println("\n--Client grade our job");
-        mycase.fw.caseSurvey(mycase,100);
+        System.out.println("\n--Please grade our job: (1-100)");
+        Scanner scanner = new Scanner(System.in);
+        int grade = scanner.nextInt();
+        mycase.fw.caseSurvey(mycase,grade);
+        System.out.println("Thank you for your grade!");
 
         System.out.println("\n--Please pay for the bill: yes - 1 or no - 0 ");
-        int payment = 1;
+        int payment = scanner.nextInt();
         if(payment == 1){
-            System.out.println("Payment Received!");
+            System.out.println("Payment Received, Thank you!");
             finish();
             changeState(new CaseSummaryState(mycase));
             mycase.caseContinue();
