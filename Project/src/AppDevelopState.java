@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class AppDevelopState implements CaseState {
 
     private Case mycase;
-    private ArrayList<EmployeeIF> team = new ArrayList<>();
 
     //constructor
     public AppDevelopState(Case c){
@@ -76,7 +75,7 @@ public class AppDevelopState implements CaseState {
 
     @Override
     public void releaseTeam() {
-        for(EmployeeIF e: team){
+        for(EmployeeIF e: mycase.team){
             e.isBusy(false);
         }
     }

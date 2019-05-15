@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class CaseSummaryState implements CaseState {
     private Case mycase;
-    private ArrayList<EmployeeIF> team = new ArrayList<>();
 
     //constructor
     public CaseSummaryState(Case c){
@@ -35,17 +34,11 @@ public class CaseSummaryState implements CaseState {
 
         System.out.println("\n############# 4. Case Summary State #############");
         createTeam();
-        //calculate how much client need pay and ask them pay
-        //ask client grade it. save the grade
-        //if client pay it -> finish
-        //if they deesn't pay -> failed
 
-        //create Case for casedatabase
-        //save it to company's case database
-
-        //move to the last state
-        //release the team
-        //contiue
+        //update employee's case involved
+        System.out.println("\n--Update all the team's case involved:");
+        mycase.hw.updateCaseInloved(mycase);
+        finish();
 
     }
 
@@ -56,7 +49,8 @@ public class CaseSummaryState implements CaseState {
 
     @Override
     public void finish() {
-
+        releaseTeam();
+        mycase.caseDone();
     }
 
     @Override
@@ -66,12 +60,9 @@ public class CaseSummaryState implements CaseState {
 
     @Override
     public void releaseTeam() {
-        for(EmployeeIF e: team){
+        for(EmployeeIF e: mycase.team){
             e.isBusy(false);
         }
     }
 
-    public ArrayList<EmployeeIF> getTeam() {
-        return team;
-    }
 }

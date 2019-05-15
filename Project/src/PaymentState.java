@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class PaymentState implements CaseState {
 
     private Case mycase;
-    private ArrayList<EmployeeIF> team = new ArrayList<>();
 
     //constructor
     public PaymentState(Case c){
@@ -68,6 +67,7 @@ public class PaymentState implements CaseState {
     public void finish() {
         System.out.println("\n--upload the case to Company case databse ");
         mycase.fw.uploadCase(mycase);
+        System.out.println("Case update done！" );
     }
 
     @Override
@@ -77,7 +77,7 @@ public class PaymentState implements CaseState {
 
     @Override
     public void releaseTeam() {
-        for(EmployeeIF e: team){
+        for(EmployeeIF e: mycase.team){
             e.isBusy(false);
         }
     }

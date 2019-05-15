@@ -18,6 +18,9 @@ public class HRManager extends Manager {
         }
     }
 
+    public void approveUpdateCaseInlvoed(){
+        System.out.println("Manager "+ getName()+ " Approved!");
+    }
     public ArrayList<HRWorker> getTeam() {
         return this.team;
     }

@@ -11,7 +11,7 @@ public class MarketingManager extends Manager {
     public boolean offerDecision(Client c, int cost){
 
         int profit = c.getBudget() - cost;
-        if(profit/cost > 0.15) return true;
+        if(profit/cost > 0.3) return true;
         else{
             System.out.println("Need CEO decide");
             CEO ceo = (CEO)getSupervisor();

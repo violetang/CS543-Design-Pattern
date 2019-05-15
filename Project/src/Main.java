@@ -92,7 +92,6 @@ public class Main {
         ((CEO) ceo).addManager((MarketingManager) yusuf);
         ((CEO) ceo).addManager((MarketingManager) anahi);
 
-
         //four workers for Marketing department
         Worker jack = new MarketingWorker(6,"Jack", 2016, "Male", marketing, MarketingWorker_packet, false, techCom);
         techCom.addEmployee(jack);
@@ -167,35 +166,38 @@ public class Main {
         ((FinManager)angenla).addWorker((FinWorker) mark);
 
         //Two managers for Finance department + workers
-        Manager zack = new HRManager(22, "Zack", 2008, "Male", HR, HR_Fin_Manager_packet, true, techCom);
+        Manager zack = new HRManager(22, "Zack", 2008, "Male", HR, HR_Fin_Manager_packet, false, techCom);
         techCom.addEmployee(zack);
 
-        Manager hanna = new HRManager(23, "Hanna", 2009, "Female", HR, HR_Fin_Manager_packet, true, techCom);
+        Manager hanna = new HRManager(23, "Hanna", 2009, "Female", HR, HR_Fin_Manager_packet, false, techCom);
         techCom.addEmployee(hanna);
 
         ((CFO) cfo).addHRManager((HRManager) zack);
         ((CFO) cfo).addHRManager((HRManager) hanna);
 
         //four workers for HR department
-        Worker yoshi = new HRWorker(24,"Yoshi", 2016, "Female", HR, HR_Fin_Worker_packet, true, techCom);
+        Worker yoshi = new HRWorker(24,"Yoshi", 2016, "Female", HR, HR_Fin_Worker_packet, false, techCom);
         techCom.addEmployee(yoshi);
         ((HRManager)zack).addWorker((HRWorker) yoshi);
 
-        Worker ahamad = new HRWorker(25,"Ahamad", 2016, "Male", HR, HR_Fin_Worker_packet, true, techCom);
+        Worker ahamad = new HRWorker(25,"Ahamad", 2016, "Male", HR, HR_Fin_Worker_packet, false, techCom);
         techCom.addEmployee(ahamad);
         ((HRManager)zack).addWorker((HRWorker) ahamad);
 
-        Worker yang = new HRWorker(26,"yANG", 2016, "Female", HR, HR_Fin_Worker_packet, true, techCom);
+        Worker yang = new HRWorker(26,"yANG", 2016, "Female", HR, HR_Fin_Worker_packet, false, techCom);
         techCom.addEmployee(yang);
         ((HRManager)hanna).addWorker((HRWorker) yang);
 
-        Worker sunny = new HRWorker(27,"Sunny", 2015, "Female", HR, HR_Fin_Worker_packet, true, techCom);
+        Worker sunny = new HRWorker(27,"Sunny", 2015, "Female", HR, HR_Fin_Worker_packet, false, techCom);
         techCom.addEmployee(sunny);
         ((HRManager)hanna).addWorker((HRWorker) sunny);
 
 
+        System.out.println("Testing if employee can access their packet and change the information");
+        yusuf.editBase(2, 7, 1000);
+
         /*=========== test employee system ===========*/
-        /*
+
         for(EmployeeIF e: techCom.getEmployee()){
             System.out.println(e.getName() +"   "+ e.getDept() + "  " + e.getPosition()+ "\n");
         }
@@ -209,7 +211,7 @@ public class Main {
         }
 
         yusuf.editBase(2, 7, 1000);
-        */
+        yoshi.editBase(3,6 ,2000);
 
         /*=========== Start to run the system ===========*/
 
@@ -241,32 +243,31 @@ public class Main {
         System.out.println("Additional function: $ 10 k per each");
         System.out.println("********************************");
 
-
         //2. assume client choose Plan A, Budget 80k;
         //todo: let client input
-        Client clientA = new Client("clientA", 500000, 'A');
+        System.out.println("Please enter Client name: ");
+        Scanner scanner = new Scanner(System.in);
+        String clientName = scanner.nextLine();
+
+        System.out.println("Please enter Client choice of Plan(A, B, C): ");
+        char PlanChoice = scanner.next().charAt(0);
+        //System.out.println(PlanChoice);
+
+        System.out.println("Please enter Clinet budget:" );
+        int budget = scanner.nextInt();
+        //System.out.println(budget);
+
+        Client clientA = new Client(clientName, budget, PlanChoice);
 
         //Create the case of client A and assign a marketing worker for it.
-        Case caseOfClientA = new Case("CaseOfClientA", clientA, a,(CEO)ceo,(CFO)cfo,(CTO)cto);
+        Case caseOfClientA = new Case(clientName, clientA, a,(CEO)ceo,(CFO)cfo,(CTO)cto);
         caseOfClientA.caseStart();
 
         //client do the survey
         caseOfClientA.grade(100);
 
-        //hr + financce
-
-
-
-
     }
 
-
-
-    //create a client
-    //company shows/print out our serveices: Plan A, Plan B, Plan C.
-    //client show their choice
-    //base on client's choice to create a task
-    //start the task
     //6 months, employee performance evaluation
     //hr start to evaluate and print out the results.
 }

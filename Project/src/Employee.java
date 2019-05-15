@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 public abstract class Employee implements EmployeeIF{
 
@@ -30,6 +30,9 @@ public abstract class Employee implements EmployeeIF{
     public static boolean hasPermission(){
         return permission;
     }
+    public void setPermission(boolean n){
+        permission = n;
+    }
 
     public int getID(){ return id; }
     public String getName(){ return name; }
@@ -57,9 +60,9 @@ public abstract class Employee implements EmployeeIF{
         editPacket.getCase();
     }
 
-    public void editBase(double s, int p, int stock){ editPacket.editBase(s,p,stock);}
+    public void editBase(double s, int p, int stock){ editPacket.editBase(s,p,stock); }
 
-    public void involvedCase(TaskIF t){editPacket.editCaseInvolve(t);}
+    public void involvedCase(Case t){editPacket.editCaseInvolve(t);}
 
     public void isBusy(boolean x){
         isBusy = x;

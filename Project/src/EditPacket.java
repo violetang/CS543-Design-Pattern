@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class EditPacket implements EditPacketIF{
+
     Packet packet;
 
     public EditPacket(Packet p){
@@ -19,7 +20,7 @@ public class EditPacket implements EditPacketIF{
     }
 
     @Override
-    public void editCaseInvolve(TaskIF c) {
+    public void editCaseInvolve(Case c) {
         packet.addCase(c);
     }
 

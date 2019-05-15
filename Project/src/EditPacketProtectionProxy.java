@@ -16,7 +16,7 @@ public class EditPacketProtectionProxy implements EditPacketIF{
    }
 
     @Override
-    public void editCaseInvolve(TaskIF c) {
+    public void editCaseInvolve(Case c) {
         if(Employee.hasPermission()){
             e.editCaseInvolve(c);
         }else{

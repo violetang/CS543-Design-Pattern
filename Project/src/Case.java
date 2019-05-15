@@ -7,7 +7,7 @@ public class Case implements TaskIF {
     private CaseState currentState;
     private PlanIF plan;
     private int grade;
-    public ArrayList<EmployeeIF> team;
+    public ArrayList<Employee> team;
 
     public CTO cto;
     public CEO ceo;
@@ -49,7 +49,7 @@ public class Case implements TaskIF {
     }
 
     public void caseDone(){
-        System.out.println("Done");
+        System.out.println("\nThe Whole CaseDone!");
     }
 
 

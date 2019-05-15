@@ -12,7 +12,7 @@ public interface EmployeeIF {
     public int getPosition();
     public void getCase();
     public void editBase(double s, int p, int stock);
-    public void involvedCase(TaskIF t);
+    public void involvedCase(Case t);
     public void isBusy(boolean x);
     public boolean getBusy();
 }

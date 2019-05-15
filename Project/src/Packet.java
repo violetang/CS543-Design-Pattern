@@ -5,14 +5,13 @@ public class Packet {
     private int position; // 1 = assistant ; 2 = regular; 3 = senior; 4 = staff
     private double bonus; // percentage: 10%, 15%, 20% ..., increase by 5 %;
     private int stock;
-    private ArrayList<TaskIF> caseInvolved;
+    private ArrayList<Case> caseInvolved = new ArrayList<>();
     
     public Packet(double baseSalary, int position, double bonus, int stock){
         this.baseSalary = baseSalary;
         this.position = position;
         this.bonus = bonus;
         this.stock = stock;
-        caseInvolved = new ArrayList<TaskIF>();
     }
 
     // About salary
@@ -54,16 +53,14 @@ public class Packet {
         return caseInvolved.size();
     }
 
-    public void addCase(TaskIF c){
+    public void addCase(Case c){
         caseInvolved.add(c);
     }
 
     public void printCase(){
-        int i = 0 ;
-        for(TaskIF c : caseInvolved){
-            Case temp = (Case)c;
-            System.out.println(i + "---" + temp.returnClient()+ "\n");
-            i++;
+        for(int i = 0 ; i< returnNumnberOfCase(); i++){
+            //Case temp = (Case)c;
+            System.out.println((i+1)+ "---" + caseInvolved.get(i).client.name+ "\n");
         }
     }
 

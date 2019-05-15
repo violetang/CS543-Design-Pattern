@@ -54,5 +54,7 @@ public class Company {
        return BusinessMaker.createService().createPlan(c);
     }
 
+    public CaseDatabase getCaseDatabases(){ return caseDatabases; }
+
 
 }
